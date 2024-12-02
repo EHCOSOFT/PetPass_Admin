@@ -1,0 +1,203 @@
+@charset "utf-8";
+/* 
+	기본정보
+	- 생성일 : 2023-04-01
+	- 파일명 : common.reset.css
+	- 포함내용 : 전역변수, 초기화
+*/
+
+/* 전역변수 */
+:root {
+	/* 색상 : 추후 변수명의 컬러코드 일괄 삭제 */
+	--color-light: #fff;
+
+	--color-F6F7F8-bg-light: #F6F7F8; /* Grey 50 */
+	--color-EDEFF2-bg-base: #EDEFF2; /* Grey 100 : #F0F1F4 */
+	--color-E2E4E9-bg-dark: #E2E4E9; /* Grey 200 */
+
+	--color-A8AEBD-line-base: #A8AEBD; /* Grey 400 */
+
+	--color-C4C8D4-disable: #C4C8D4; /* Grey 300 */
+	--color-7E869A-base: #7E869A; /* Grey 500 */
+	--color-12192B-dark: #12192B; /* Grey 900 */
+
+	--color-656B7B-txt-sub: #656B7B; /* Grey 600 */
+	--color-313749-txt-body: #313749; /* Grey 800 */
+
+	--color-primary: #0046FF; /* Primary 50 */
+	--color-0036C6-primary-dark: #0036C6; /* Blue Dark 39 */
+	--color-00278E-primary-active: #00278E; /* Blue Dark 28 */
+
+	--color-A8BFFF-primary-disabled: #A8BFFF; /* Blue 83 */
+
+	--color-F5F8FF-primary-bg-light: #F5F8FF; /* Blue 98 */
+	--color-EBF0FF-primary-bg-base: #EBF0FF; /* Blue 96 */
+	--color-CCDAFF-primary-bg-dark: #CCDAFF; /* Blue 90 */
+
+	--color-secondary: #00856C;
+	--color-highlight: #F5002C;
+	--color-success: #12A188;
+	--color-warning: #F35C06;
+	--color-info: #9946EC;
+
+	--color-dimmed: rgba(0,0,0,.7);
+
+	/* 폰트두께 */
+	--font-bold: 700;
+	--font-semibold: 600;
+	--font-medium: 500;
+	--font-regular: 400;
+	--font-light: 300;
+
+	/* 폰트크기 : 최종 버전으로 추후 변수명의 숫자 일괄 삭제 */
+	--font-headline-40-lg: 4.0rem;
+	--font-headline-28-md: 2.8rem;
+
+	--font-title-24-lg: 2.4rem;
+	--font-title-20-md: 2.0rem;
+	--font-title-18-sm: 1.8rem;
+	--font-title-16-xs: 1.6rem;
+
+	--font-18-lg: 1.8rem;
+	--font-16-md: 1.6rem;
+	--font-15-sm: 1.5rem;
+	--font-14-xs: 1.4rem;
+	--font-13-xxs: 1.3rem;
+	--font-12-min: 1.2rem;
+
+	/* 선두께 : 최종 버전으로 추후 변수명의 숫자 일괄 삭제 */
+	--line-4-xl: .4rem;
+	--line-2-lg: .2rem;
+	--line-15-md: .15rem;
+	--line-1-sm: .1rem;
+
+	/* 그림자 */
+	--shadow-reset: 0 0 0 rgba(0, 0, 0, 0);
+	--shadow-sm: 0 .1rem .4rem 0 rgba(18, 25, 43, .04);
+	--shadow-md: 0 .2rem 1.2rem 0 rgba(18, 25, 43, .12);
+	--shadow-lg: 0 .4rem 1.6rem 0 rgba(18, 25, 43, .12);
+
+	--shadow-primary-sm: 0 .1rem .4rem 0 rgba(85, 141, 255, .16);
+	--shadow-primary-md: 0 .2rem .8rem 0 rgba(85, 141, 255, .16);
+	--shadow-primary-lg: 0 .4rem 1.2rem 0 rgba(85, 141, 255, .16);
+	
+	/* 모서리지름 : 최종 버전으로 추후 변수명의 숫자 일괄 삭제 */
+	--radius-24-xl: 2.4rem;
+	--radius-16-lg: 1.6rem;
+	--radius-8-md: .8rem;
+	--radius-4-sm: .4rem;
+
+	/* 여백 : 최종 버전으로 추후 변수명의 숫자 일괄 삭제 */
+	--space-body: 2.0rem;
+	--space-48-max: 4.8rem;
+	--space-40-xxl: 4.0rem;
+	--space-32-xl: 3.2rem;
+	--space-24-lg: 2.4rem;
+	--space-20-md: 2.0rem;
+	--space-16-sm: 1.6rem;
+	--space-12-xs: 1.2rem;
+	--space-8-xxs: .8rem;
+	--space-4-min: .4rem;
+
+	/* 아이콘사이즈 : 최종 버전으로 추후 변수명의 숫자 일괄 삭제 */
+	--icon-64-max: 6.4rem;
+	--icon-48-xl: 4.8rem;
+	--icon-36-lg: 3.6rem;
+	--icon-24-md: 2.4rem;
+	--icon-16-sm: 1.6rem;
+	--icon-12-xs: 1.2rem;
+
+	/* 공통아이콘 : 최종 버전으로 추후 변수명 숫자 일괄 삭제 */
+	--bg-url-64-max: url('../../image/com/ico-common-max.svg');
+	--bg-url-48-xl: url('../../image/com/ico-common-xl.svg');
+	--bg-url-36-lg: url('../../image/com/ico-common-lg.svg');
+	--bg-url-24-md: url('../../image/com/ico-common-md.svg');
+	--bg-url-16-sm: url('../../image/com/ico-common-sm.svg');
+	--bg-url-12-xs: url('../../image/com/ico-common-xs.svg');
+	--bg-url-etc: url('../../image/com/ico-common-etc.svg');
+
+	--bg-size-64-max: 64.0rem auto; /* 64*64 */
+	--bg-size-48-xl: 48.0rem auto; /* 48*48 */
+	--bg-size-36-lg: 36.0rem auto; /* 36*36 */
+	--bg-size-24-md: 24.0rem auto; /* 24*24 */
+	--bg-size-16-sm: 16.0rem auto; /* 16*16 */
+	--bg-size-12-xs: 12.0rem auto; /* 12*12 */
+	--bg-size-etc: 20.0rem auto;
+
+	/* 애니메이션 */
+	--animation-speed-fast: .15s;
+	--animation-speed: .3s;
+	--animation-timing-base: cubic-bezier(.4, 0, .7, 1);
+	--animation-timing-outback: cubic-bezier(.4, 0, .3, 1.8);
+	--animation-timing-outback-sm: cubic-bezier(.4, 0, .1, 1.4);
+	--animation-timing-ease: ease;
+	--animation-timing-linear: linear;
+}
+
+/* 전역변수 - (태블릿) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+}
+
+/* 전역변수 - (태블릿+PC) */
+@media screen and (min-width: 768px) {
+}
+
+/* 전역변수 - (PC) */
+@media screen and (min-width: 1025px) {
+}
+
+/* 변수선언참고 */
+/* .variable-tip {
+	--size: 33;
+	width: calc(var(--size) * 1vw);
+	height: calc(var(--size) * 1vh);
+
+	--color: 240, 240, 240;
+	--alpha: 0.8;
+	background-color: rgba(var(--color), var(--alpha));
+} */
+
+/* 초기화 */
+*, ::before, ::after {box-sizing: border-box;}
+body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, legend, ul, ol, li, p, input, select, textarea, table, th, td {margin: 0; padding: 0;}
+html {-webkit-text-size-adjust: none; -webkit-tap-highlight-color: transparent; background-color: var(--color-light); font-size: 62.5%;}
+body {text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; font-family: 'Pretendard', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif; line-height: 1.5; font-size: var(--font-16-md); font-weight: var(--font-regular); color: var(--color-313749-txt-body);}
+html, body {overflow: hidden; height: 100%;}
+button, input, select, textarea {max-width: 100%; font: inherit; box-shadow: none; background-color: transparent;}
+button, [type=button], [type=reset], [type=submit] {-webkit-appearance: button; appearance: button;}
+canvas, img, picture, svg, video {display: block; max-width: 100%;}
+button {background-color: transparent; border: 0;}
+fieldset {border: 0;}
+table {border-collapse: collapse; border-spacing: 0;}
+ol, ul {list-style-type: none;}
+strong {font-weight: 600;}
+em {font-style: normal;}
+a {text-decoration: none;}
+a:hover, a:focus, a:active, a:visited {text-decoration: none;}
+/* a:focus {outline-style: dashed; outline-color: #004FE9; outline-width: .1rem; outline-offset: -.1rem;} */
+::selection {background-color: var(--color-primary); color: var(--color-light);}
+input::-ms-clear, input::-ms-reveal,
+input::-webkit-search-decoration, 
+input::-webkit-search-cancel-button, 
+input::-webkit-search-results-button, 
+input::-webkit-search-results-decoration {display: none;}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+	transition: background-color 5000s ease-in-out 0s;
+	-webkit-transition: background-color 9999s ease-out;
+	-webkit-box-shadow: 0 0 0px 1000px #fff inset !important;
+}
+
+/* 초기화 - (태블릿) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+}
+
+/* 초기화 - (태블릿+PC) */
+@media screen and (min-width: 768px) {
+}
+
+/* 초기화 - (PC) */
+@media screen and (min-width: 1025px) {
+}

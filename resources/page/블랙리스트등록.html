@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,viewport-fit=cover,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>블랙리스트 관리</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/resources/image/com/favicon.ico">
+    <link rel="stylesheet" href="/resources/css/com/content.css">
+    <link rel="stylesheet" href="/resources/css/cnt/page.css">
+    <link rel="stylesheet" href="/resources/css/com/custom.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="page">
+            <header id="header">
+                <h1 class="header-title">
+                    <span class="logo"><a href="javascript:;" title="메인 페이지"><span class="sr-only">Pet
+                                Pass</span></a></span>
+                    <span class="txt">블랙리스트 등록</span>
+                </h1>
+                <!-- #nav -->
+                <nav id="gnb">
+                    <div class="gnb-inner">
+                        <div class="gnb-wrap">
+                            <ul class="gnb-list">
+                                <li class="gnb-item fn-fold-wrap is-open" data-fold-slide="true" id="goPage01">
+                                    <a href="javascript:;" tabindex="0">
+                                        <span class="txt fn-fold-link">월별통계</span>
+                                    </a>
+                                    <button type="button" class="btn-fold fn-fold-btn" aria-expanded="true">
+                                        <span class="sr-only">닫기</span>
+                                    </button>
+                                </li>
+                                <li class="gnb-item fn-fold-wrap is-open" data-fold-slide="true">
+                                    <a href="javascript:;" tabindex="0">
+                                        <span class="txt fn-fold-link" id="goPage02">출입내역</span>
+                                    </a>
+                                    <button type="button" class="btn-fold fn-fold-btn" aria-expanded="true">
+                                        <span class="sr-only">닫기</span>
+                                    </button>
+                                </li>
+                                <li class="gnb-item fn-fold-wrap is-open" data-fold-slide="true" id="goPage04Li">
+                                    <a href="javascript:;" tabindex="0">
+                                        <span class="txt fn-fold-link" id="goPage04">회원관리</span>
+                                    </a>
+                                    <button type="button" class="btn-fold fn-fold-btn" aria-expanded="true">
+                                        <span class="sr-only">닫기</span>
+                                    </button>
+                                </li>
+                                <li class="gnb-item fn-fold-wrap is-open" data-fold-slide="true" id="">
+                                    <a href="javascript:;" tabindex="0">
+                                        <span class="txt fn-fold-link" id="">블랙리스트 관리</span>
+                                    </a>
+                                    <button type="button" class="btn-fold fn-fold-btn" aria-expanded="true">
+                                        <span class="sr-only">닫기</span>
+                                    </button>
+                                </li>
+                            </ul>
+                            <div class="gnb-btn-wrap">
+                                <button type="button" class="btn primary gnb-save"></button>
+                            </div>
+                        </div>
+
+                        <div class="util">
+                            <a href="javascript:;">
+                                <ul class="util-list" id="logOutBtn">로그아웃
+                                    <li class="util-item logout"><span class="sr-only">로그아웃</span></li>
+                                </ul>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+                <!--// #nav -->
+            </header>
+
+            <main id="main">
+
+                <!-- #content -->
+                <article id="content">
+
+                    <!-- .section -->
+                    <section class="section">
+                        <!-- .title* -->
+                        <h2 class="title-main">
+                            <span class="txt">블랙리스트 등록</span>
+                        </h2>
+                        <!--// .title* -->
+
+                    </section>
+                    <!--// .section -->
+
+                    <section class="section">
+                        <div class="group">
+                            <!-- .data -->
+                            <div class="data">
+                                <div class="list-head">
+                                    <h3 class="list-title">블랙리스트 정보</h3>
+                                </div>
+                                <div class="data-body option-react">
+                                    <table class="data-list">
+                                        <caption class="sr-only">
+                                            <!-- 표제목 -->
+                                            <strong>블랙리스트 정보 표</strong>
+                                            <!-- 표내용순서 -->
+                                            <span>증권번호, 계약상태, 계약자, 피보험자, 상품구분, 플랜명, 보험료, 납입방법, 보기/납기/보험기간, 청약일자, 운행용도,
+                                                직업 정보</span>
+                                        </caption>
+                                        <colgroup>
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th>동물등록번호<span>*</span></th>
+                                                <td>
+                                                    <div class="input-wrap">
+                                                        <div class="input w-100">
+                                                            <input type="text" id="petNumber" name="petNumber"
+                                                                class="input-data" value="" title="동물등록번호"
+                                                                placeholder="동물등록번호 입력">
+                                                            <button type="button" class="btn-clear"
+                                                                aria-hidden="true"><span class="sr-only">입력 내용
+                                                                    삭제</span></button>
+                                                        </div>
+                                                        <div class="btn-group">
+                                                            <button type="button" class="btn primary"
+                                                                id=""><span>조회</span></button>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>동물이름</th>
+                                                <td>
+                                                    <div class="input w-100">
+                                                        <input type="text" id="petName" name="petName"
+                                                            class="input-data" value="" title="동물이름">
+                                                        <button type="button" class="btn-clear" aria-hidden="true"><span
+                                                                class="sr-only">입력 내용 삭제</span></button>
+                                                    </div>
+                                                </td>
+                                                <th>등록자명</th>
+                                                <td>
+                                                    <div class="input w-100">
+                                                        <input type="text" id="petGuardianName" name="petGuardianName"
+                                                            class="input-data" value="" title="등록자명">
+                                                        <button type="button" class="btn-clear" aria-hidden="true"><span
+                                                                class="sr-only">입력 내용 삭제</span></button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>성별</th>
+                                                <td>
+                                                    <div class="input w-100">
+                                                        <input type="text" id="petGender" name="petGender"
+                                                            class="input-data" value="" title="성별">
+                                                        <button type="button" class="btn-clear" aria-hidden="true"><span
+                                                                class="sr-only">입력 내용 삭제</span></button>
+                                                    </div>
+                                                </td>
+                                                <th>품종</th>
+                                                <td>
+                                                    <div class="input w-100">
+                                                        <input type="text" id="petBreedCodeOption"
+                                                            name="petBreedCodeOption" class="input-data" value=""
+                                                            title="품종">
+                                                        <button type="button" class="btn-clear" aria-hidden="true"><span
+                                                                class="sr-only">입력 내용 삭제</span></button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>사유<span>*</span></th>
+                                                <td>
+                                                    <div class="input-wrap">
+                                                        <div class="select w-100">
+                                                            <select name="petBlackListReason" id="petBlackListReason"
+                                                                class="select-data" aria-label="사유선택" aria-hidden="true"
+                                                                tabindex="-1">
+                                                                <option>사유선택</option>
+                                                                <option value="1">마운팅 심함</option>
+                                                                <option value="2">입질 심함</option>
+                                                                <option value="3">보호자 귀책</option>
+                                                                <option value="4">타인에게 피해입힘</option>
+                                                                <option value="0">기타</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="input w-100 hide">
+                                                            <input type="text" id="petBlackListEtcReason"
+                                                                name="petBlackListEtcReason" class="input-data" value=""
+                                                                title="국가동물번호" placeholder="사유가 기타일시 내용입력">
+                                                            <button type="button" class="btn-clear"
+                                                                aria-hidden="true"><span class="sr-only">입력 내용
+                                                                    삭제</span></button>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>사고발생일<span>*</span></th>
+                                                <td>
+                                                    <div class="input option-date w-fix-md">
+                                                        <input type="text" name="PetAccidentDate" id="PetAccidentDate"
+                                                            class="input-data" placeholder="YYYY-MM-DD" title="사고발생일">
+                                                        <button type="button" class="btn-calendar" aria-label="사고발생일"
+                                                            aria-expanded="false" aria-haspopup="dialog"><span
+                                                                class="sr-only">달력 선택</span></button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!--// .data -->
+                        </div>
+                    </section>
+
+                    <!-- .btn-group* -->
+                    <div class="btn-group">
+                        <button type="button" class="btn filled fixed" id=""><span>취소</span></button>
+                        <button type="button" class="btn primary" id=""><span>등록</span></button>
+                    </div>
+                    <!--// .btn-group* -->
+
+                    <!--// #content -->
+                </article>
+
+                <!-- #popup -->
+                <div id="popup">
+                    <!-- .calendar-popup -->
+                    <div class="calendar-popup" id="calendarPopup" role="dialog" aria-modal="true" aria-hidden="true"
+                        aria-labelledby="calendarTitle">
+                        <!-- .calendar-content -->
+                        <div class="calendar-content">
+                            <!-- .calendar-title -->
+                            <h2 class="calendar-title" id="calendarTitle"><span>달력</span></h2>
+                            <!--// .calendar-title -->
+                            <!-- .calendar -->
+                            <div class="calendar">
+                                <button class="btn-prev"><span class="sr-only">이전달</span></button>
+                                <button class="btn-next"><span class="sr-only">다음달</span></button>
+                                <div class="calendar-group">
+                                    <div class="calendar-head">
+                                        <div class="select in-calendar">
+                                            <select name="" id="calendar1" class="select-data fn-year" aria-label="년"
+                                                aria-hidden="true" tabindex="-1">
+                                                <option value="2023" selected>2023</option>
+                                                <option value="2024">2024</option>
+                                                <option value="2025">2025</option>
+                                            </select>
+                                        </div>
+                                        <div class="select in-calendar">
+                                            <select name="" id="calendar2" class="select-data fn-month" aria-label="월"
+                                                aria-hidden="true" tabindex="-1">
+                                                <option value="01">01</option>
+                                                <option value="02">02</option>
+                                                <option value="03">03</option>
+                                                <option value="04">04</option>
+                                                <option value="05">05</option>
+                                                <option value="06">06</option>
+                                                <option value="07">07</option>
+                                                <option value="08">08</option>
+                                                <option value="09">09</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="calendar-body">
+                                        <div class="week">
+                                            <span class="day">일</span>
+                                            <span class="day">월</span>
+                                            <span class="day">화</span>
+                                            <span class="day">수</span>
+                                            <span class="day">목</span>
+                                            <span class="day">금</span>
+                                            <span class="day">토</span>
+                                        </div>
+                                        <div class="day-group">
+                                            <button class="day prev">26</button>
+                                            <button class="day prev">27</button>
+                                            <button class="day prev">28</button>
+                                            <button class="day prev">29</button>
+                                            <button class="day prev">30</button>
+                                            <button class="day prev">31</button>
+                                            <button class="day">1</button>
+                                            <button class="day">2</button>
+                                            <button class="day">3</button>
+                                            <button class="day">4</button>
+                                            <button class="day today">5</button>
+                                            <button class="day">6</button>
+                                            <button class="day is-active">7</button>
+                                            <button class="day">8</button>
+                                            <button class="day">9</button>
+                                            <button class="day">10</button>
+                                            <button class="day holiday">11</button>
+                                            <button class="day">12</button>
+                                            <button class="day">13</button>
+                                            <button class="day">14</button>
+                                            <button class="day">15</button>
+                                            <button class="day">16</button>
+                                            <button class="day">17</button>
+                                            <button class="day is-start">18</button>
+                                            <button class="day ing">19</button>
+                                            <button class="day ing">20</button>
+                                            <button class="day ing">21</button>
+                                            <button class="day ing">22</button>
+                                            <button class="day is-end">23</button>
+                                            <button class="day">24</button>
+                                            <button class="day">25</button>
+                                            <button class="day">26</button>
+                                            <button class="day">27</button>
+                                            <button class="day">28</button>
+                                            <button class="day">29</button>
+                                            <button class="day">30</button>
+                                            <button class="day next">1</button>
+                                            <button class="day next">2</button>
+                                            <button class="day next">3</button>
+                                            <button class="day next">4</button>
+                                            <button class="day next">5</button>
+                                            <button class="day next">6</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// .calendar -->
+                            <!-- .btn-popup-close -->
+                            <button type="button" class="btn-popup-close">
+                                <span class="icon"></span>
+                                <span class="sr-only">팝업 닫기</span>
+                            </button>
+                            <!--// .btn-popup-close -->
+                        </div>
+                        <!--// .calendar-content -->
+                    </div>
+                    <!--// .calendar-popup -->
+                </div>
+                <!--// #popup -->
+            </main>
+        </div>
+    </div>
+
+    <script src="/resources/js/com/jquery-3.7.0.min.js"></script>
+    <script src="/resources/js/com/common_pub.js"></script>
+    <script src="/resources/js/cst/page_pub.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(document).on('click', '#petBlackListReasonOption li', function () {
+                const $li = $(this);
+                const $selectWrapper = $('#petBlackListReason').parent();
+                const $input = $selectWrapper.next('.input');
+
+                if ($li.is(':last-child')) {
+                    $input.prop('disabled', false).removeClass('hide').addClass('show');
+                } else {
+                    $input.prop('disabled', true).removeClass('show').addClass('hide');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

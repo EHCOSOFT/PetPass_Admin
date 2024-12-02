@@ -1,0 +1,26 @@
+@charset "utf-8";
+@import url('common.font.css'); /* 웹폰트 */
+@import url('common.reset.css'); /* 전역변수, 초기화 */
+@import url('common.layout.css'); /* 전체레이아웃, 브레드크럼 */
+@import url('common.popup.css'); /* 팝업 스타일 정의 - 모달, 바텀시트, 팝오버, 툴팁 */
+@import url('common.form.css'); /* 데이터 관련 요소 스타일 정의 - 버튼, 텍스트필드, 캘린더, 셀렉트박스, 텍스트에어리어, 라디오버튼, 체크박스, 칩, 스위치, 토글라디오버튼 */
+@import url('common.module.css'); /* 그룹화 된 구성 요소 스타일 정의 - 공지사항, 박스, 탭, 아코디언, 등록폼, 폼도움말, 검색, 게시판형목록, 카드형목록, 테이블, 요소분할 */
+@import url('common.element.css'); /* 단일 요소 스타일 정의 - 스크롤바, 아이콘, 뱃지, 태그, 스텝, 링크, 헤드라인, 제목, 텍스트, 폰트, 정렬, 사이즈, 여백 */
+
+/* 
+	기본정보
+	- 생성일 : 2023-04-01
+	- 파일명 : content.css
+	- 포함내용 : 공통 이외의 사용 빈도수가 상대적으로 낮은 콘텐츠 스타일 정의
+*/
+
+/* 주소 검색 */
+.board-option-post {justify-content: left; align-items: start; padding: var(--space-16-sm) var(--space-24-lg) var(--space-16-sm) 0;}
+.board-option-post .unit + .unit {margin-left: var(--space-16-sm);}
+.cell-postcode {display: block; font-weight: var(--font-semibold); font-size: var(--font-14-xs); color: var(--color-12192B-dark);}
+.cell-address {display: block; font-size: var(--font-14-xs); color: var(--color-12192B-dark);}
+.cell-old-address {display: block; margin-top: var(--space-8-xxs); font-size: var(--font-13-xxs); color: var(--color-7E869A-base);}
+
+/* 주소 검색 - (PC) */
+@media screen and (min-width: 1025px) {
+}

@@ -1,0 +1,21 @@
+@charset "UTF-8";
+._stealien_keypad_border {display: flex; flex-wrap: wrap; overflow: hidden; z-index: 10; width: 100%; padding: .4rem .8rem 1.0rem; margin-top: var(--space-8-xxs); border: var(--line-1-sm) solid var(--color-EDEFF2-bg-base); border-radius: var(--radius-8-md); text-align: left;}
+
+._stealien_keybutton {width: calc((100% - (.2rem * 12)) / 6); margin: .6rem .2rem 0; padding: 1.2rem 0; border-radius: var(--radius-8-md); text-align: center; transform: scale3d(1, 1, 1); transition: all var(--animation-speed-fast) var(--animation-timing-base);}
+._stealien_keybutton.active {background-color: var(--color-EBF0FF-primary-bg-base); color: var(--color-primary);}
+._stealien_keybutton:active {transform: scale3d(.98, .98, 1);}
+._stealien_keybutton > img {display: none;}
+
+._stealien_img_keypad {padding: 1.2rem 1.0rem; line-height: 1; font-size: var(--font-title-24-lg); color: var(--color-313749-txt-body);}
+
+._stealien_special_keybutton {display: block; padding: 1.6rem; background-color: var(--color-EDEFF2-bg-base); line-height: 1; font-size: var(--font-14-xs); color: var(--color-313749-txt-body);}
+._stealien_special_keybutton.active {background-color: var(--color-EBF0FF-primary-bg-base); color: var(--color-primary);}
+
+._stealien_keybutton_clear {width: calc((100% - (.2rem * 6)) / 4);}
+._stealien_keybutton_shuffle {width: calc((100% - (.2rem * 6)) / 4);}
+._stealien_keybutton_enter {width: calc((100% - (.2rem * 6)) / 2); background-color: var(--color-primary); font-weight: var(--font-semibold); font-size: var(--font-16-md); color: var(--color-light);}
+
+._stealien_keypad_input {/* width: 20px; */}
+._stealien_keybutton_null {background-color: var(--color-light);}
+._stealien_keybutton_back {width: calc(100% / 11 * 2);}
+._stealien_keybutton_tooltip {width: calc(100% / 11); font-size: 20px; text-align: center; background-color: white;}
