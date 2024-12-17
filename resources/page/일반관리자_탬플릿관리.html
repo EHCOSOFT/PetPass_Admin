@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,viewport-fit=cover,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>블랙리스트 관리</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/resources/image/com/favicon.ico">
+    <link rel="stylesheet" href="/resources/css/com/content.css">
+    <link rel="stylesheet" href="/resources/css/cnt/page.css">
+</head>
+
+<body>
+    <!-- /#wrap 신규페이지 -->
+    <div id="wrap">
+        <div id="page">
+            <header id="header">
+                <!-- /.contianer 신규 추가-->
+                <div class="container">
+                    <button type="button" class="btn-menu-open">
+                        <img src="/resources/image/ico/i-list.svg" alt="메뉴 오픈">
+                    </button>
+                    <a href="javascript:;" class="header-logo">
+                        <img src="/resources/image/logo.svg" alt="DR CLOONEY LOGO">
+                    </a>
+                    <a href="javascript:;" class="header-logout" id="logOutBtn"><img
+                            src="/resources/image/ico/i-logout.svg" alt="로그아웃">로그아웃</a>
+                </div>
+            </header>
+
+            <main id="main">
+
+                <!-- /.#asdie 신규 추가 -->
+                <aside class="aside" id="aside">
+                    <button type="button" class="btn-aside-close">
+                        <img src="/resources/image/ico/i-aside-close.svg" alt="메뉴 닫기">
+                    </button>
+                    <ul class="depth-01">
+                        <li>
+                            <a href="#"><img src="/resources/image/ico/i-aside-01.svg" alt="월별통계">월별통계</a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="/resources/image/ico/i-aside-02.svg" alt="출입내역">출입내역</a>
+                        </li>
+                        <li class="depth-child active">
+                            <a href="#"><img src="/resources/image/ico/i-aside-03.svg" alt="회원관리">회원관리</a>
+                            <ul class="depth-02">
+                                <li>
+                                    <a href="#"><img src="/resources/image/ico/i-aside-03-01.svg" alt="회원정보">회원정보</a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="/resources/image/ico/i-aside-03-02.svg"
+                                            alt="메뉴권한관리">메뉴권한관리</a>
+                                </li>
+                                <li class="active">
+                                    <a href="#"><img src="/resources/image/ico/i-aside-03-03.svg" alt="템플릿 관리">템플릿
+                                        관리</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><img src="/resources/image/ico/i-aside-04.svg" alt="블랙리스트 관리">블랙리스트 관리</a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="/resources/image/ico/i-aside-05.svg" alt="템플릿 관리">템플릿 관리</a>
+                        </li>
+                    </ul>
+                </aside>
+
+                <!-- #content -->
+                <article id="content">
+
+                    <!-- /.content-top 추가 -->
+                    <section class="content-top">
+                        <h1>템플릿 관리</h1>
+                    </section>
+
+                    <!-- .section -->
+                    <section class="section">
+
+                        <div class="form-wrap">
+                            <!-- .form-list -->
+                            <div class="form-list">
+
+                                <div class="form-item item-half">
+                                    <div class="unit">
+                                        <div class="form-name">
+                                            <strong>
+                                                <label for="animalNumber">업체명</label>
+                                            </strong>
+                                        </div>
+                                        <div class="select w-100">
+                                            <select name="menuCompanyName" id="menuCompanyName" class="select-data"
+                                                aria-label="업체명" aria-hidden="true" tabindex="-1">
+                                                <option>전체</option>
+                                                <option value="1">업체명</option>
+                                                <option value="2">업체명</option>
+                                                <option value="3">업체명</option>
+                                                <option value="4">업체명</option>
+                                                <option value="0">업체명</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="unit">
+                                        <div class="input-wrap">
+                                            <div class="input w-100">
+                                                <input type="text" id="companyName" name="companyName"
+                                                    class="input-data" value="" title="업체명" placeholder="업체 직접입력">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- /.btn-group 위치변경(후) -->
+                                    <div class="btn-group">
+                                        <button type="button" class="btn primary" id="selBtn"><img
+                                                src="/resources/image/ico/i-search-w.svg" alt="검색">검색</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// .form-list -->
+                        </div>
+
+                        <div class="form-wrap">
+                            <!-- .form-list -->
+                            <div class="form-list">
+
+                                <div class="form-item item-half">
+                                    <div class="unit">
+                                        <div class="form-name">
+                                            <strong>
+                                                <label for="animalNumber">업체구분</label>
+                                            </strong>
+                                        </div>
+                                        <div class="radio-wrap">
+                                            <div class="radio-group">
+                                                <input type="radio" id="radio01" name="companyCategory">
+                                                <label for="radio01">지자체</label>
+                                            </div>
+                                            <div class="radio-group">
+                                                <input type="radio" id="radio02" name="companyCategory">
+                                                <label for="radio02">사설시설</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="unit">
+                                        <div class="form-name">
+                                            <strong>
+                                                <label for="animalNumber">업체 선택</label>
+                                            </strong>
+                                        </div>
+                                        <div class="select w-100">
+                                            <select name="menuCompanyName" id="menuCompanyName" class="select-data"
+                                                aria-label="업체명" aria-hidden="true" tabindex="-1">
+                                                <option>전체</option>
+                                                <option value="1">업체명</option>
+                                                <option value="2">업체명</option>
+                                                <option value="3">업체명</option>
+                                                <option value="4">업체명</option>
+                                                <option value="0">업체명</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <!-- /.btn-group 위치변경(후) -->
+                                    <div class="btn-group">
+                                        <button type="button" class="btn primary" id="selBtn"><img
+                                                src="/resources/image/ico/i-search-w.svg" alt="검색">검색</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// .form-list -->
+                        </div>
+
+
+                        <!-- .group -->
+                        <div class="group">
+                            <div class="form-wrap">
+                                <div class="form-head">
+                                    <h3>기본 템플릿(필수)</h3>
+                                    <button type="button" class="btn outline-primary option-md btn-add-template"
+                                        id="#">추가</button>
+                                </div>
+                                <!-- .form-list -->
+                                <div class="form-list">
+                                    <ul class="form-move">
+
+                                        <!-- 템플릿 : 단답형 -->
+                                        <li class="form-move-item">
+                                            <button type="button" class="btn-move">
+                                                <img src="/resources/image/ico/i-move.svg" alt="이동">
+                                            </button>
+                                            <div class="form-move-box">
+                                                <div class="form-move-option">
+                                                    <div class="form-option-group">
+                                                        <div class="dropdown">
+                                                            <button class="dropdown-button"><img
+                                                                    src="/resources/image/ico/i-template-01.svg"
+                                                                    alt="단답형">단답형</button>
+                                                            <div class="dropdown-content">
+                                                                // 선택되어 있거나 선택된 값 .dropdown-button으로 이동
+                                                                // 선택된 value값에 따라 .template-change 내용 변경
+                                                                <a href="#" class="selected" value="templateText"><img
+                                                                        src="/resources/image/ico/i-template-01.svg"
+                                                                        alt="단답형">단답형</a>
+                                                                <a href="#" value="templateCheckbox"><img
+                                                                        src="/resources/image/ico/i-template-02.svg"
+                                                                        alt="체크박스">체크박스</a>
+                                                                <a href="#" value="templateRadio"><img
+                                                                        src="/resources/image/ico/i-template-03.svg"
+                                                                        alt="단일선택">단일선택</a>
+                                                                <a href="#" value="templateSelect"><img
+                                                                        src="/resources/image/ico/i-template-04.svg"
+                                                                        alt="목록선택형">목록선택형</a>
+                                                                <a href="#" value="templateRadioText"><img
+                                                                        src="/resources/image/ico/i-template-03.svg"
+                                                                        alt="단일선택+단답형">단일선택+단답형</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="check-group">
+                                                            <input type="checkbox" id="essentialText" checked>
+                                                            <label for="essentialText">필수</label>
+                                                        </div>
+                                                        <div class="check-group">
+                                                            <input type="checkbox" id="activate01" checked>
+                                                            <label for="activate01">활성화 여부</label>
+                                                        </div>
+                                                    </div>
+                                                    <button type="button" class="btn-move-close open-modal"
+                                                        data-modal-id="alertModal">
+                                                        <img src="/resources/image/ico/i-move-close.svg" alt="템플릿 삭제">
+                                                    </button>
+                                                </div>
+                                                <div class="template-change">
+                                                    <div class="input w-100">
+                                                        <input type="text" id="templateText" name="templateText"
+                                                            class="input-data" value="품종"
+                                                            placeholder="질문을 입력해주세요.(30byte)">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="form-move-item">
+                                            <button type="button" class="btn-move">
+                                                <img src="/resources/image/ico/i-move.svg" alt="이동">
+                                            </button>
+                                            <div class="form-move-box">
+                                                <div class="form-move-option">
+                                                    <div class="form-option-group">
+                                                        <div class="dropdown">
+                                                            <button class="dropdown-button"><img
+                                                                    src="/resources/image/ico/i-template-01.svg"
+                                                                    alt="단답형">단답형</button>
+                                                            <div class="dropdown-content">
+                                                                // 선택되어 있거나 선택된 값 .dropdown-button으로 이동
+                                                                // 선택된 value값에 따라 .template-change 내용 변경
+                                                                <a href="#" class="selected" value="templateText"><img
+                                                                        src="/resources/image/ico/i-template-01.svg"
+                                                                        alt="단답형">단답형</a>
+                                                                <a href="#" value="templateCheckbox"><img
+                                                                        src="/resources/image/ico/i-template-02.svg"
+                                                                        alt="체크박스">체크박스</a>
+                                                                <a href="#" value="templateRadio"><img
+                                                                        src="/resources/image/ico/i-template-03.svg"
+                                                                        alt="단일선택">단일선택</a>
+                                                                <a href="#" value="templateSelect"><img
+                                                                        src="/resources/image/ico/i-template-04.svg"
+                                                                        alt="목록선택형">목록선택형</a>
+                                                                <a href="#" value="templateRadioText"><img
+                                                                        src="/resources/image/ico/i-template-03.svg"
+                                                                        alt="단일선택+단답형">단일선택+단답형</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="check-group">
+                                                            <input type="checkbox" id="essentialText02" checked>
+                                                            <label for="essentialText02">필수</label>
+                                                        </div>
+                                                        <div class="check-group">
+                                                            <input type="checkbox" id="activate02" checked>
+                                                            <label for="activate02">활성화 여부</label>
+                                                        </div>
+                                                    </div>
+                                                    <button type="button" class="btn-move-close open-modal"
+                                                        data-modal-id="alertModal">
+                                                        <img src="/resources/image/ico/i-move-close.svg" alt="템플릿 삭제">
+                                                    </button>
+                                                </div>
+                                                <div class="template-change">
+                                                    <div class="input w-100">
+                                                        <input type="text" id="templateText" name="templateText"
+                                                            class="input-data" value="방문자 이름"
+                                                            placeholder="질문을 입력해주세요.(30byte)">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="form-move-item">
+                                            <button type="button" class="btn-move">
+                                                <img src="/resources/image/ico/i-move.svg" alt="이동">
+                                            </button>
+                                            <div class="form-move-box">
+                                                <div class="form-move-option">
+                                                    <div class="form-option-group">
+                                                        <div class="dropdown">
+                                                            <button class="dropdown-button"><img
+                                                                    src="/resources/image/ico/i-template-04.svg"
+                                                                    alt="목록선택형">목록선택형</button>
+                                                            <div class="dropdown-content">
+                                                                // 선택되어 있거나 선택된 값 .dropdown-button으로 이동
+                                                                // 선택된 value값에 따라 .template-change 내용 변경
+                                                                <a href="#" value="templateText"><img
+                                                                        src="/resources/image/ico/i-template-01.svg"
+                                                                        alt="단답형">단답형</a>
+                                                                <a href="#" value="templateCheckbox"><img
+                                                                        src="/resources/image/ico/i-template-02.svg"
+                                                                        alt="체크박스">체크박스</a>
+                                                                <a href="#" value="templateRadio"><img
+                                                                        src="/resources/image/ico/i-template-03.svg"
+                                                                        alt="단일선택">단일선택</a>
+                                                                <a href="#" class="selected" value="templateSelect"><img
+                                                                        src="/resources/image/ico/i-template-04.svg"
+                                                                        alt="목록선택형">목록선택형</a>
+                                                                <a href="#" value="templateRadioText"><img
+                                                                        src="/resources/image/ico/i-template-03.svg"
+                                                                        alt="단일선택+단답형">단일선택+단답형</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="check-group">
+                                                            <input type="checkbox" id="essentialText" checked>
+                                                            <label for="essentialText">필수</label>
+                                                        </div>
+                                                        <div class="check-group">
+                                                            <input type="checkbox" id="activate01" checked>
+                                                            <label for="activate01">활성화 여부</label>
+                                                        </div>
+                                                    </div>
+                                                    <button type="button" class="btn-move-close open-modal"
+                                                        data-modal-id="alertModal">
+                                                        <img src="/resources/image/ico/i-move-close.svg" alt="템플릿 삭제">
+                                                    </button>
+                                                </div>
+                                                <div class="template-change">
+                                                    <!-- // 질문 입력 -->
+                                                    <div class="input w-100">
+                                                        <input type="text" id="templateText" name="templateText"
+                                                            class="input-data" value="동반인원수"
+                                                            placeholder="질문 입력(30byte)">
+                                                    </div>
+                                                    <!-- // 항목 입력(기본) -->
+                                                    <div class="input w-100">
+                                                        <input type="text" id="templateText" name="templateText"
+                                                            class="input-data" value="1" placeholder="항목 입력(8byte)">
+                                                    </div>
+                                                    <!-- // 항목 입력(기본) -->
+                                                    <div class="input w-100">
+                                                        <input type="text" id="templateText" name="templateText"
+                                                            class="input-data" value="2" placeholder="항목 입력(8byte)">
+                                                    </div>
+                                                    <!-- // 항목 입력(추가된) -->
+                                                    <div class="input w-100">
+                                                        <input type="text" id="templateText" name="templateText"
+                                                            class="input-data" value="3" placeholder="항목 입력(8byte)">
+                                                        <button type="button" class="btn-input-close">
+                                                            <img src="/resources/image/ico/i-move-close.svg"
+                                                                alt="항목 삭제">
+                                                        </button>
+                                                    </div>
+                                                    <a href="#" class="add-option-item">항목 추가</a>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <!-- 템플릿 : 체크박스 -->
+                                        <!-- <li class="form-move-item">
+                                            <button type="button" class="btn-move">
+                                                <img src="/resources/image/ico/i-move.svg" alt="이동">
+                                            </button>
+                                            <div class="form-move-box">
+                                                <div class="form-move-option">
+                                                    <div class="form-option-group">
+                                                        <div class="dropdown">
+                                                            <button class="dropdown-button"><img
+                                                                    src="/resources/image/ico/i-template-02.svg"
+                                                                    alt="체크박스">체크박스</button>
+                                                            <div class="dropdown-content">
+                                                                <a href="#" class="selected" value="templateText"><img
+                                                                        src="/resources/image/ico/i-template-01.svg"
+                                                                        alt="단답형">단답형</a>
+                                                                <a href="#" value="templateCheckbox"><img
+                                                                        src="/resources/image/ico/i-template-02.svg"
+                                                                        alt="체크박스">체크박스</a>
+                                                                <a href="#" value="templateRadio"><img
+                                                                        src="/resources/image/ico/i-template-03.svg"
+                                                                        alt="단일선택">단일선택</a>
+                                                                <a href="#" value="templateSelect"><img
+                                                                        src="/resources/image/ico/i-template-04.svg"
+                                                                        alt="목록선택형">목록선택형</a>
+                                                                <a href="#" value="templateRadioText"><img
+                                                                        src="/resources/image/ico/i-template-03.svg"
+                                                                        alt="단일선택+단답형">단일선택+단답형</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="check-group">
+                                                            <input type="checkbox" id="essentialCheck">
+                                                            <label for="essentialCheck">필수</label>
+                                                        </div>
+                                                    </div>
+                                                    <button type="button" class="btn-move-close">
+                                                        <img src="/resources/image/ico/i-move-close.svg" alt="템플릿 삭제">
+                                                    </button>
+                                                </div>
+                                                <div class="template-change">
+                                                    // 질문 입력
+                                                    <div class="input w-100">
+                                                        <input type="text" id="templateText" name="templateText"
+                                                            class="input-data" value="" title="국가동물번호"
+                                                            placeholder="질문 입력(30byte)">
+                                                    </div>
+                                                    // 항목 입력(기본)
+                                                    <div class="input w-100">
+                                                        <input type="text" id="templateText" name="templateText"
+                                                            class="input-data" value="" placeholder="항목 입력(8byte)">
+                                                    </div>
+                                                    // 항목 입력(추가된)
+                                                    <div class="input w-100">
+                                                        <input type="text" id="templateText" name="templateText"
+                                                            class="input-data" value="" placeholder="항목 입력(8byte)">
+                                                        <button type="button" class="btn-input-close">
+                                                            <img src="/resources/image/ico/i-move-close.svg"
+                                                                alt="항목 삭제">
+                                                        </button>
+                                                    </div>
+                                                    <a href="#" class="add-check-item">항목 추가</a>
+                                                </div>
+                                            </div>
+                                        </li> -->
+
+                                        <!-- 템플릿 : 단일선택 -->
+                                        <!-- <li class="form-move-item">
+                                            <button type="button" class="btn-move">
+                                                <img src="/resources/image/ico/i-move.svg" alt="이동">
+                                            </button>
+                                            <div class="form-move-box">
+                                                <div class="form-move-option">
+                                                    <div class="form-option-group">
+                                                        <div class="dropdown">
+                                                            <button class="dropdown-button"><img
+                                                                    src="/resources/image/ico/i-template-03.svg"
+                                                                    alt="단일선택">단일선택</button>
+                                                            <div class="dropdown-content">
+                                                                <a href="#" value="templateText"><img
+                                                                        src="/resources/image/ico/i-template-01.svg"
+                                                                        alt="단답형">단답형</a>
+                                                                <a href="#" value="templateCheckbox"><img
+                                                                        src="/resources/image/ico/i-template-02.svg"
+                                                                        alt="체크박스">체크박스</a>
+                                                                <a href="#" class="selected" value="templateRadio"><img
+                                                                        src="/resources/image/ico/i-template-03.svg"
+                                                                        alt="단일선택">단일선택</a>
+                                                                <a href="#" value="templateSelect"><img
+                                                                        src="/resources/image/ico/i-template-04.svg"
+                                                                        alt="목록선택형">목록선택형</a>
+                                                                <a href="#" value="templateRadioText"><img
+                                                                        src="/resources/image/ico/i-template-03.svg"
+                                                                        alt="단일선택+단답형">단일선택+단답형</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="check-group">
+                                                            <input type="checkbox" id="essentialRadio">
+                                                            <label for="essentialRadio">필수</label>
+                                                        </div>
+                                                    </div>
+                                                    <button type="button" class="btn-move-close open-modal" data-modal-id="alertModal">
+                                                        <img src="/resources/image/ico/i-move-close.svg" alt="템플릿 삭제">
+                                                    </button>
+                                                </div>
+                                                <div class="template-change">
+                                                    <div class="input w-100">
+                                                        <input type="text" id="templateText" name="templateText"
+                                                            class="input-data" value="" placeholder="질문 입력(30byte)">
+                                                    </div>
+                                                    <div class="input w-100">
+                                                        <input type="text" id="templateText" name="templateText"
+                                                            class="input-data" value="" placeholder="항목 입력(8byte)">
+                                                    </div>
+                                                    <div class="input w-100">
+                                                        <input type="text" id="templateText" name="templateText"
+                                                            class="input-data" value="" placeholder="항목 입력(8byte)">
+                                                        <button type="button" class="btn-input-close">
+                                                            <img src="/resources/image/ico/i-move-close.svg"
+                                                                alt="항목 삭제">
+                                                        </button>
+                                                    </div>
+                                                    <a href="#" class="add-radio-item">항목 추가</a>
+                                                </div>
+                                            </div>
+                                        </li> -->
+
+                                        <!-- 템플릿 : 목록선택형 -->
+                                        <!-- <li class="form-move-item">
+                                            <button type="button" class="btn-move">
+                                                <img src="/resources/image/ico/i-move.svg" alt="이동">
+                                            </button>
+                                            <div class="form-move-box">
+                                                <div class="form-move-option">
+                                                    <div class="form-option-group">
+                                                        <div class="dropdown">
+                                                            <button class="dropdown-button"><img
+                                                                    src="/resources/image/ico/i-template-04.svg"
+                                                                    alt="목록선택형">목록선택형</button>
+                                                            <div class="dropdown-content">
+                                                                <a href="#" value="templateText"><img
+                                                                        src="/resources/image/ico/i-template-01.svg"
+                                                                        alt="단답형">단답형</a>
+                                                                <a href="#" value="templateCheckbox"><img
+                                                                        src="/resources/image/ico/i-template-02.svg"
+                                                                        alt="체크박스">체크박스</a>
+                                                                <a href="#" value="templateRadio"><img
+                                                                        src="/resources/image/ico/i-template-03.svg"
+                                                                        alt="단일선택">단일선택</a>
+                                                                <a href="#" class="selected" value="templateSelect"><img
+                                                                        src="/resources/image/ico/i-template-04.svg"
+                                                                        alt="목록선택형">목록선택형</a>
+                                                                <a href="#" value="templateRadioText"><img
+                                                                        src="/resources/image/ico/i-template-03.svg"
+                                                                        alt="단일선택+단답형">단일선택+단답형</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="check-group">
+                                                            <input type="checkbox" id="essentialSelect">
+                                                            <label for="essentialSelect">필수</label>
+                                                        </div>
+                                                    </div>
+                                                    <button type="button" class="btn-move-close open-modal" data-modal-id="alertModal">
+                                                        <img src="/resources/image/ico/i-move-close.svg" alt="템플릿 삭제">
+                                                    </button>
+                                                </div>
+                                                <div class="template-change">
+                                                    // 질문 입력 
+                                                    <div class="input w-100">
+                                                        <input type="text" id="templateText" name="templateText"
+                                                            class="input-data" value="" placeholder="질문 입력(30byte)">
+                                                    </div>
+                                                    // 항목 입력(기본) 
+                                                    <div class="input w-100">
+                                                        <input type="text" id="templateText" name="templateText"
+                                                            class="input-data" value="" placeholder="항목 입력(8byte)">
+                                                    </div>
+                                                    // 항목 입력(추가된)
+                                                    <div class="input w-100">
+                                                        <input type="text" id="templateText" name="templateText"
+                                                            class="input-data" value="" placeholder="항목 입력(8byte)">
+                                                        <button type="button" class="btn-input-close">
+                                                            <img src="/resources/image/ico/i-move-close.svg"
+                                                                alt="항목 삭제">
+                                                        </button>
+                                                    </div>
+                                                    <a href="#" class="add-option-item">항목 추가</a>
+                                                </div>
+                                            </div>
+                                        </li> -->
+
+                                        <!-- 템플릿 : 단일선택 + 단답형 -->
+                                        <!-- <li class="form-move-item">
+                                            <button type="button" class="btn-move">
+                                                <img src="/resources/image/ico/i-move.svg" alt="이동">
+                                            </button>
+                                            <div class="form-move-box">
+                                                <div class="form-move-option">
+                                                    <div class="form-option-group">
+                                                        <div class="dropdown">
+                                                            <button class="dropdown-button"><img
+                                                                    src="/resources/image/ico/i-template-03.svg"
+                                                                    alt="단일선택+단답형">단일선택+단답형</button>
+                                                            <div class="dropdown-content">
+                                                                <a href="#" value="templateText"><img
+                                                                        src="/resources/image/ico/i-template-01.svg"
+                                                                        alt="단답형">단답형</a>
+                                                                <a href="#" value="templateCheckbox"><img
+                                                                        src="/resources/image/ico/i-template-02.svg"
+                                                                        alt="체크박스">체크박스</a>
+                                                                <a href="#" value="templateRadio"><img
+                                                                        src="/resources/image/ico/i-template-03.svg"
+                                                                        alt="단일선택">단일선택</a>
+                                                                <a href="#" value="templateSelect"><img
+                                                                        src="/resources/image/ico/i-template-04.svg"
+                                                                        alt="목록선택형">목록선택형</a>
+                                                                <a href="#" class="selected"
+                                                                    value="templateRadioText"><img
+                                                                        src="/resources/image/ico/i-template-03.svg"
+                                                                        alt="단일선택+단답형">단일선택+단답형</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="check-group">
+                                                            <input type="checkbox" id="essentialRadioText">
+                                                            <label for="essentialRadioText">필수</label>
+                                                        </div>
+                                                    </div>
+                                                    <button type="button" class="btn-move-close open-modal" data-modal-id="alertModal">
+                                                        <img src="/resources/image/ico/i-move-close.svg" alt="템플릿 삭제">
+                                                    </button>
+                                                </div>
+                                                <div class="template-change">
+                                                    <div class="input w-100">
+                                                        <input type="text" id="templateText" name="templateText"
+                                                            class="input-data" value="" placeholder="질문 입력(30byte)">
+                                                        <button type="button" class="btn-clear" aria-hidden="true"><span
+                                                                class="sr-only">입력 내용
+                                                                삭제</span></button>
+                                                    </div>
+                                                    <div class="radio-text-item">
+                                                        <div class="input w-100">
+                                                            <input type="text" id="templateText" name="templateText"
+                                                                class="input-data" value="" placeholder="항목 입력(8byte)">
+                                                            <button type="button" class="btn-clear"
+                                                                aria-hidden="true"><span class="sr-only">입력 내용
+                                                                    삭제</span></button>
+                                                        </div>
+                                                        <div class="check-group">
+                                                            <input type="checkbox" id="textActive01"
+                                                                class="text-acitve">
+                                                            <label for="textActive01">단답형 활성화</label>
+                                                        </div>
+                                                        <div class="input w-100">
+                                                            <input type="text" id="templateText" name="templateText"
+                                                                disabled class="input-data" value=""
+                                                                placeholder="항목 입력(8byte)">
+                                                            <button type="button" class="btn-clear"
+                                                                aria-hidden="true"><span class="sr-only">입력 내용
+                                                                    삭제</span></button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="radio-text-item">
+                                                        <div class="input w-100">
+                                                            <input type="text" id="templateText" name="templateText"
+                                                                class="input-data" value="" placeholder="항목 입력(8byte)">
+                                                            <button type="button" class="btn-clear"
+                                                                aria-hidden="true"><span class="sr-only">입력 내용
+                                                                    삭제</span></button>
+                                                        </div>
+                                                        <div class="check-group">
+                                                            <input type="checkbox" id="textActive02"
+                                                                class="text-acitve">
+                                                            <label for="textActive02">단답형 활성화</label>
+                                                        </div>
+                                                        <div class="input w-100">
+                                                            <input type="text" id="templateText" name="templateText"
+                                                                disabled class="input-data" value=""
+                                                                placeholder="항목 입력(8byte)">
+                                                            <button type="button" class="btn-clear"
+                                                                aria-hidden="true"><span class="sr-only">입력 내용
+                                                                    삭제</span></button>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="add-radio-text-item">항목 추가</a>
+                                                </div>
+                                            </div>
+                                        </li> -->
+                                    </ul>
+                                </div>
+                                <!--// .form-list -->
+                            </div>
+                        </div>
+                        <!--// .group -->
+
+                        <!-- .group -->
+                        <div class="group">
+                            <div class="form-wrap">
+                                <div class="form-head">
+                                    <h3>옵션 템플릿(선택)</h3>
+                                    <button type="button" class="btn outline-primary option-md btn-add-template"
+                                        id="#">추가</button>
+                                </div>
+                                <!-- .form-list -->
+                                <div class="form-list">
+                                    <ul class="form-move">
+
+                                        <!-- 템플릿 : 단답형 -->
+                                        <!-- <li class="form-move-item">
+                                            <button type="button" class="btn-move">
+                                                <img src="/resources/image/ico/i-move.svg" alt="이동">
+                                            </button>
+                                            <div class="form-move-box">
+                                                <div class="form-move-option">
+                                                    <div class="form-option-group">
+                                                        <div class="dropdown">
+                                                            <button class="dropdown-button"><img
+                                                                    src="/resources/image/ico/i-template-01.svg"
+                                                                    alt="단답형">단답형</button>
+                                                            <div class="dropdown-content">
+                                                                // 선택되어 있거나 선택된 값 .dropdown-button으로 이동
+                                                                // 선택된 value값에 따라 .template-change 내용 변경
+                                                                <a href="#" class="selected" value="templateText"><img
+                                                                        src="/resources/image/ico/i-template-01.svg"
+                                                                        alt="단답형">단답형</a>
+                                                                <a href="#" value="templateCheckbox"><img
+                                                                        src="/resources/image/ico/i-template-02.svg"
+                                                                        alt="체크박스">체크박스</a>
+                                                                <a href="#" value="templateRadio"><img
+                                                                        src="/resources/image/ico/i-template-03.svg"
+                                                                        alt="단일선택">단일선택</a>
+                                                                <a href="#" value="templateSelect"><img
+                                                                        src="/resources/image/ico/i-template-04.svg"
+                                                                        alt="목록선택형">목록선택형</a>
+                                                                <a href="#" value="templateRadioText"><img
+                                                                        src="/resources/image/ico/i-template-03.svg"
+                                                                        alt="단일선택+단답형">단일선택+단답형</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="check-group">
+                                                            <input type="checkbox" id="essentialText">
+                                                            <label for="essentialText">필수</label>
+                                                        </div>
+                                                    </div>
+                                                    <button type="button" class="btn-move-close open-modal"
+                                                        data-modal-id="alertModal">
+                                                        <img src="/resources/image/ico/i-move-close.svg" alt="템플릿 삭제">
+                                                    </button>
+                                                </div>
+                                                <div class="template-change">
+                                                    <div class="input w-100">
+                                                        <input type="text" id="templateText" name="templateText"
+                                                            class="input-data" value=""
+                                                            placeholder="질문을 입력해주세요.(30byte)">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li> -->
+
+                                        <!-- 템플릿 : 체크박스 -->
+                                        <!-- <li class="form-move-item">
+                                            <button type="button" class="btn-move">
+                                                <img src="/resources/image/ico/i-move.svg" alt="이동">
+                                            </button>
+                                            <div class="form-move-box">
+                                                <div class="form-move-option">
+                                                    <div class="form-option-group">
+                                                        <div class="dropdown">
+                                                            <button class="dropdown-button"><img
+                                                                    src="/resources/image/ico/i-template-02.svg"
+                                                                    alt="체크박스">체크박스</button>
+                                                            <div class="dropdown-content">
+                                                                <a href="#" class="selected" value="templateText"><img
+                                                                        src="/resources/image/ico/i-template-01.svg"
+                                                                        alt="단답형">단답형</a>
+                                                                <a href="#" value="templateCheckbox"><img
+                                                                        src="/resources/image/ico/i-template-02.svg"
+                                                                        alt="체크박스">체크박스</a>
+                                                                <a href="#" value="templateRadio"><img
+                                                                        src="/resources/image/ico/i-template-03.svg"
+                                                                        alt="단일선택">단일선택</a>
+                                                                <a href="#" value="templateSelect"><img
+                                                                        src="/resources/image/ico/i-template-04.svg"
+                                                                        alt="목록선택형">목록선택형</a>
+                                                                <a href="#" value="templateRadioText"><img
+                                                                        src="/resources/image/ico/i-template-03.svg"
+                                                                        alt="단일선택+단답형">단일선택+단답형</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="check-group">
+                                                            <input type="checkbox" id="essentialCheck">
+                                                            <label for="essentialCheck">필수</label>
+                                                        </div>
+                                                    </div>
+                                                    <button type="button" class="btn-move-close">
+                                                        <img src="/resources/image/ico/i-move-close.svg" alt="템플릿 삭제">
+                                                    </button>
+                                                </div>
+                                                <div class="template-change">
+                                                    // 질문 입력
+                                                    <div class="input w-100">
+                                                        <input type="text" id="templateText" name="templateText"
+                                                            class="input-data" value="" title="국가동물번호"
+                                                            placeholder="질문 입력(30byte)">
+                                                    </div>
+                                                    // 항목 입력(기본)
+                                                    <div class="input w-100">
+                                                        <input type="text" id="templateText" name="templateText"
+                                                            class="input-data" value="" placeholder="항목 입력(8byte)">
+                                                    </div>
+                                                    // 항목 입력(추가된)
+                                                    <div class="input w-100">
+                                                        <input type="text" id="templateText" name="templateText"
+                                                            class="input-data" value="" placeholder="항목 입력(8byte)">
+                                                        <button type="button" class="btn-input-close">
+                                                            <img src="/resources/image/ico/i-move-close.svg"
+                                                                alt="항목 삭제">
+                                                        </button>
+                                                    </div>
+                                                    <a href="#" class="add-check-item">항목 추가</a>
+                                                </div>
+                                            </div>
+                                        </li> -->
+
+                                        <!-- 템플릿 : 단일선택 -->
+                                        <!-- <li class="form-move-item">
+                                            <button type="button" class="btn-move">
+                                                <img src="/resources/image/ico/i-move.svg" alt="이동">
+                                            </button>
+                                            <div class="form-move-box">
+                                                <div class="form-move-option">
+                                                    <div class="form-option-group">
+                                                        <div class="dropdown">
+                                                            <button class="dropdown-button"><img
+                                                                    src="/resources/image/ico/i-template-03.svg"
+                                                                    alt="단일선택">단일선택</button>
+                                                            <div class="dropdown-content">
+                                                                <a href="#" value="templateText"><img
+                                                                        src="/resources/image/ico/i-template-01.svg"
+                                                                        alt="단답형">단답형</a>
+                                                                <a href="#" value="templateCheckbox"><img
+                                                                        src="/resources/image/ico/i-template-02.svg"
+                                                                        alt="체크박스">체크박스</a>
+                                                                <a href="#" class="selected" value="templateRadio"><img
+                                                                        src="/resources/image/ico/i-template-03.svg"
+                                                                        alt="단일선택">단일선택</a>
+                                                                <a href="#" value="templateSelect"><img
+                                                                        src="/resources/image/ico/i-template-04.svg"
+                                                                        alt="목록선택형">목록선택형</a>
+                                                                <a href="#" value="templateRadioText"><img
+                                                                        src="/resources/image/ico/i-template-03.svg"
+                                                                        alt="단일선택+단답형">단일선택+단답형</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="check-group">
+                                                            <input type="checkbox" id="essentialRadio">
+                                                            <label for="essentialRadio">필수</label>
+                                                        </div>
+                                                    </div>
+                                                    <button type="button" class="btn-move-close open-modal" data-modal-id="alertModal">
+                                                        <img src="/resources/image/ico/i-move-close.svg" alt="템플릿 삭제">
+                                                    </button>
+                                                </div>
+                                                <div class="template-change">
+                                                    <div class="input w-100">
+                                                        <input type="text" id="templateText" name="templateText"
+                                                            class="input-data" value="" placeholder="질문 입력(30byte)">
+                                                    </div>
+                                                    <div class="input w-100">
+                                                        <input type="text" id="templateText" name="templateText"
+                                                            class="input-data" value="" placeholder="항목 입력(8byte)">
+                                                    </div>
+                                                    <div class="input w-100">
+                                                        <input type="text" id="templateText" name="templateText"
+                                                            class="input-data" value="" placeholder="항목 입력(8byte)">
+                                                        <button type="button" class="btn-input-close">
+                                                            <img src="/resources/image/ico/i-move-close.svg"
+                                                                alt="항목 삭제">
+                                                        </button>
+                                                    </div>
+                                                    <a href="#" class="add-radio-item">항목 추가</a>
+                                                </div>
+                                            </div>
+                                        </li> -->
+
+                                        <!-- 템플릿 : 목록선택형 -->
+                                        <!-- <li class="form-move-item">
+                                            <button type="button" class="btn-move">
+                                                <img src="/resources/image/ico/i-move.svg" alt="이동">
+                                            </button>
+                                            <div class="form-move-box">
+                                                <div class="form-move-option">
+                                                    <div class="form-option-group">
+                                                        <div class="dropdown">
+                                                            <button class="dropdown-button"><img
+                                                                    src="/resources/image/ico/i-template-04.svg"
+                                                                    alt="목록선택형">목록선택형</button>
+                                                            <div class="dropdown-content">
+                                                                <a href="#" value="templateText"><img
+                                                                        src="/resources/image/ico/i-template-01.svg"
+                                                                        alt="단답형">단답형</a>
+                                                                <a href="#" value="templateCheckbox"><img
+                                                                        src="/resources/image/ico/i-template-02.svg"
+                                                                        alt="체크박스">체크박스</a>
+                                                                <a href="#" value="templateRadio"><img
+                                                                        src="/resources/image/ico/i-template-03.svg"
+                                                                        alt="단일선택">단일선택</a>
+                                                                <a href="#" class="selected" value="templateSelect"><img
+                                                                        src="/resources/image/ico/i-template-04.svg"
+                                                                        alt="목록선택형">목록선택형</a>
+                                                                <a href="#" value="templateRadioText"><img
+                                                                        src="/resources/image/ico/i-template-03.svg"
+                                                                        alt="단일선택+단답형">단일선택+단답형</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="check-group">
+                                                            <input type="checkbox" id="essentialSelect">
+                                                            <label for="essentialSelect">필수</label>
+                                                        </div>
+                                                    </div>
+                                                    <button type="button" class="btn-move-close open-modal" data-modal-id="alertModal">
+                                                        <img src="/resources/image/ico/i-move-close.svg" alt="템플릿 삭제">
+                                                    </button>
+                                                </div>
+                                                <div class="template-change">
+                                                    // 질문 입력 
+                                                    <div class="input w-100">
+                                                        <input type="text" id="templateText" name="templateText"
+                                                            class="input-data" value="" placeholder="질문 입력(30byte)">
+                                                    </div>
+                                                    // 항목 입력(기본) 
+                                                    <div class="input w-100">
+                                                        <input type="text" id="templateText" name="templateText"
+                                                            class="input-data" value="" placeholder="항목 입력(8byte)">
+                                                    </div>
+                                                    // 항목 입력(추가된)
+                                                    <div class="input w-100">
+                                                        <input type="text" id="templateText" name="templateText"
+                                                            class="input-data" value="" placeholder="항목 입력(8byte)">
+                                                        <button type="button" class="btn-input-close">
+                                                            <img src="/resources/image/ico/i-move-close.svg"
+                                                                alt="항목 삭제">
+                                                        </button>
+                                                    </div>
+                                                    <a href="#" class="add-option-item">항목 추가</a>
+                                                </div>
+                                            </div>
+                                        </li> -->
+
+                                        <!-- 템플릿 : 단일선택 + 단답형 -->
+                                        <!-- <li class="form-move-item">
+                                            <button type="button" class="btn-move">
+                                                <img src="/resources/image/ico/i-move.svg" alt="이동">
+                                            </button>
+                                            <div class="form-move-box">
+                                                <div class="form-move-option">
+                                                    <div class="form-option-group">
+                                                        <div class="dropdown">
+                                                            <button class="dropdown-button"><img
+                                                                    src="/resources/image/ico/i-template-03.svg"
+                                                                    alt="단일선택+단답형">단일선택+단답형</button>
+                                                            <div class="dropdown-content">
+                                                                <a href="#" value="templateText"><img
+                                                                        src="/resources/image/ico/i-template-01.svg"
+                                                                        alt="단답형">단답형</a>
+                                                                <a href="#" value="templateCheckbox"><img
+                                                                        src="/resources/image/ico/i-template-02.svg"
+                                                                        alt="체크박스">체크박스</a>
+                                                                <a href="#" value="templateRadio"><img
+                                                                        src="/resources/image/ico/i-template-03.svg"
+                                                                        alt="단일선택">단일선택</a>
+                                                                <a href="#" value="templateSelect"><img
+                                                                        src="/resources/image/ico/i-template-04.svg"
+                                                                        alt="목록선택형">목록선택형</a>
+                                                                <a href="#" class="selected"
+                                                                    value="templateRadioText"><img
+                                                                        src="/resources/image/ico/i-template-03.svg"
+                                                                        alt="단일선택+단답형">단일선택+단답형</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="check-group">
+                                                            <input type="checkbox" id="essentialRadioText">
+                                                            <label for="essentialRadioText">필수</label>
+                                                        </div>
+                                                    </div>
+                                                    <button type="button" class="btn-move-close open-modal" data-modal-id="alertModal">
+                                                        <img src="/resources/image/ico/i-move-close.svg" alt="템플릿 삭제">
+                                                    </button>
+                                                </div>
+                                                <div class="template-change">
+                                                    <div class="input w-100">
+                                                        <input type="text" id="templateText" name="templateText"
+                                                            class="input-data" value="" placeholder="질문 입력(30byte)">
+                                                        <button type="button" class="btn-clear" aria-hidden="true"><span
+                                                                class="sr-only">입력 내용
+                                                                삭제</span></button>
+                                                    </div>
+                                                    <div class="radio-text-item">
+                                                        <div class="input w-100">
+                                                            <input type="text" id="templateText" name="templateText"
+                                                                class="input-data" value="" placeholder="항목 입력(8byte)">
+                                                            <button type="button" class="btn-clear"
+                                                                aria-hidden="true"><span class="sr-only">입력 내용
+                                                                    삭제</span></button>
+                                                        </div>
+                                                        <div class="check-group">
+                                                            <input type="checkbox" id="textActive01"
+                                                                class="text-acitve">
+                                                            <label for="textActive01">단답형 활성화</label>
+                                                        </div>
+                                                        <div class="input w-100">
+                                                            <input type="text" id="templateText" name="templateText"
+                                                                disabled class="input-data" value=""
+                                                                placeholder="항목 입력(8byte)">
+                                                            <button type="button" class="btn-clear"
+                                                                aria-hidden="true"><span class="sr-only">입력 내용
+                                                                    삭제</span></button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="radio-text-item">
+                                                        <div class="input w-100">
+                                                            <input type="text" id="templateText" name="templateText"
+                                                                class="input-data" value="" placeholder="항목 입력(8byte)">
+                                                            <button type="button" class="btn-clear"
+                                                                aria-hidden="true"><span class="sr-only">입력 내용
+                                                                    삭제</span></button>
+                                                        </div>
+                                                        <div class="check-group">
+                                                            <input type="checkbox" id="textActive02"
+                                                                class="text-acitve">
+                                                            <label for="textActive02">단답형 활성화</label>
+                                                        </div>
+                                                        <div class="input w-100">
+                                                            <input type="text" id="templateText" name="templateText"
+                                                                disabled class="input-data" value=""
+                                                                placeholder="항목 입력(8byte)">
+                                                            <button type="button" class="btn-clear"
+                                                                aria-hidden="true"><span class="sr-only">입력 내용
+                                                                    삭제</span></button>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="add-radio-text-item">항목 추가</a>
+                                                </div>
+                                            </div>
+                                        </li> -->
+                                    </ul>
+                                </div>
+                                <!--// .form-list -->
+                            </div>
+                        </div>
+                        <!--// .group -->
+                        <div class="btn-group">
+                            <button type="button" class="btn gray" id="">미리보기</button>
+                            <div class="btn-group flex-end">
+                                <button type="button" class="btn filled fixed" id=""><span>취소</span></button>
+                                <button type="button" class="btn primary" id=""><span>적용</span></button>
+                            </div>
+                        </div>
+                    </section>
+                    <!--// .section -->
+                </article>
+                <!--// #content -->
+
+                <!-- #popup -->
+                <div id="popup">
+                    <!-- .calendar-popup -->
+                    <div class="calendar-popup" id="calendarPopup" role="dialog" aria-modal="true" aria-hidden="true"
+                        aria-labelledby="calendarTitle">
+                        <!-- .calendar-content -->
+                        <div class="calendar-content">
+                            <!-- .calendar-title -->
+                            <h2 class="calendar-title" id="calendarTitle"><span>달력</span></h2>
+                            <!--// .calendar-title -->
+                            <!-- .calendar -->
+                            <div class="calendar">
+                                <button class="btn-prev"><span class="sr-only">이전달</span></button>
+                                <button class="btn-next"><span class="sr-only">다음달</span></button>
+                                <div class="calendar-group">
+                                    <div class="calendar-head">
+                                        <div class="select in-calendar">
+                                            <select name="" id="calendar1" class="select-data fn-year" aria-label="년"
+                                                aria-hidden="true" tabindex="-1">
+                                                <option value="2023" selected>2023</option>
+                                                <option value="2024">2024</option>
+                                                <option value="2025">2025</option>
+                                            </select>
+                                        </div>
+                                        <div class="select in-calendar">
+                                            <select name="" id="calendar2" class="select-data fn-month" aria-label="월"
+                                                aria-hidden="true" tabindex="-1">
+                                                <option value="01">01</option>
+                                                <option value="02">02</option>
+                                                <option value="03">03</option>
+                                                <option value="04">04</option>
+                                                <option value="05">05</option>
+                                                <option value="06">06</option>
+                                                <option value="07">07</option>
+                                                <option value="08">08</option>
+                                                <option value="09">09</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="calendar-body">
+                                        <div class="week">
+                                            <span class="day">일</span>
+                                            <span class="day">월</span>
+                                            <span class="day">화</span>
+                                            <span class="day">수</span>
+                                            <span class="day">목</span>
+                                            <span class="day">금</span>
+                                            <span class="day">토</span>
+                                        </div>
+                                        <div class="day-group">
+                                            <button class="day prev">26</button>
+                                            <button class="day prev">27</button>
+                                            <button class="day prev">28</button>
+                                            <button class="day prev">29</button>
+                                            <button class="day prev">30</button>
+                                            <button class="day prev">31</button>
+                                            <button class="day">1</button>
+                                            <button class="day">2</button>
+                                            <button class="day">3</button>
+                                            <button class="day">4</button>
+                                            <button class="day today">5</button>
+                                            <button class="day">6</button>
+                                            <button class="day is-active">7</button>
+                                            <button class="day">8</button>
+                                            <button class="day">9</button>
+                                            <button class="day">10</button>
+                                            <button class="day holiday">11</button>
+                                            <button class="day">12</button>
+                                            <button class="day">13</button>
+                                            <button class="day">14</button>
+                                            <button class="day">15</button>
+                                            <button class="day">16</button>
+                                            <button class="day">17</button>
+                                            <button class="day is-start">18</button>
+                                            <button class="day ing">19</button>
+                                            <button class="day ing">20</button>
+                                            <button class="day ing">21</button>
+                                            <button class="day ing">22</button>
+                                            <button class="day is-end">23</button>
+                                            <button class="day">24</button>
+                                            <button class="day">25</button>
+                                            <button class="day">26</button>
+                                            <button class="day">27</button>
+                                            <button class="day">28</button>
+                                            <button class="day">29</button>
+                                            <button class="day">30</button>
+                                            <button class="day next">1</button>
+                                            <button class="day next">2</button>
+                                            <button class="day next">3</button>
+                                            <button class="day next">4</button>
+                                            <button class="day next">5</button>
+                                            <button class="day next">6</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// .calendar -->
+                            <!-- .btn-popup-close -->
+                            <button type="button" class="btn-popup-close">
+                                <span class="icon"></span>
+                                <span class="sr-only">팝업 닫기</span>
+                            </button>
+                            <!--// .btn-popup-close -->
+                        </div>
+                        <!--// .calendar-content -->
+                    </div>
+                    <!--// .calendar-popup -->
+                </div>
+                <!--// #popup -->
+            </main>
+        </div>
+    </div>
+
+    <!-- START : alertModal -->
+    <div id="alertModal" class="modal-wrap">
+        <div class="modal-inner">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h3>안내</h3>
+                    <h5>질문 항목을 삭제하시면,<br>입력하신 데이터가 모두 삭제됩니다.<br>삭제
+                        하시겠습니까? </h5>
+                </div>
+                <div class="modal-footer">
+                    <div class="btn-group last">
+                        <button type="button" class="btn filled fixed btn-modal-close" id=""><span>취소</span></button>
+                        <button type="button" class="btn primary" id="">확인</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END : alertModal -->
+
+    <script src="/resources/js/com/jquery-3.7.0.min.js"></script>
+    <script src="/resources/js/com/common_pub.js"></script>
+    <script src="/resources/js/cst/page_pub.js"></script>
+    <!-- 신규 js 추가 -->
+    <script src="/resources/js/custom/custom.js"></script>
+</body>
+
+</html>

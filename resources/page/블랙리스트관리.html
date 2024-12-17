@@ -16,13 +16,28 @@
     <div id="wrap">
         <div id="page">
             <header id="header">
+                <!-- ./header-title 기존 html display:none; 처리 되어있음. -->
                 <h1 class="header-title">
                     <span class="logo"><a href="javascript:;" title="메인 페이지"><span class="sr-only">Pet
                                 Pass</span></a></span>
                     <span class="txt">블랙리스트</span>
                 </h1>
+
+                <!-- /.contianer 신규 추가-->
+                <div class="container">
+                    <button type="button" class="btn-menu-open">
+                        <img src="/resources/image/ico/i-list.svg" alt="메뉴 오픈">
+                    </button>
+                    <a href="javascript:;" class="header-logo">
+                        <img src="/resources/image/logo.svg" alt="DR CLOONEY LOGO">
+                    </a>
+                    <a href="javascript:;" class="header-logout" id="logOutBtn"><img
+                            src="/resources/image/ico/i-logout.svg" alt="로그아웃">로그아웃</a>
+                </div>
+
                 <!-- #nav -->
-                <nav id="gnb">
+                <!-- /#gnb 사용 안함 -->
+                <!-- <nav id="gnb">
                     <div class="gnb-inner">
                         <div class="gnb-wrap">
                             <ul class="gnb-list">
@@ -72,42 +87,82 @@
                             </a>
                         </div>
                     </div>
-                </nav>
+                </nav> -->
                 <!--// #nav -->
             </header>
 
             <main id="main">
 
+                <!-- /.#asdie 신규 추가 -->
+                <aside class="aside" id="aside">
+                    <button type="button" class="btn-aside-close">
+                        <img src="/resources/image/ico/i-aside-close.svg" alt="메뉴 닫기">
+                    </button>
+                    <ul class="depth-01">
+                        <li>
+                            <a href="#"><img src="/resources/image/ico/i-aside-01.svg" alt="월별통계">월별통계</a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="/resources/image/ico/i-aside-02.svg" alt="출입내역">출입내역</a>
+                        </li>
+                        <li class="depth-child">
+                            <a href="#"><img src="/resources/image/ico/i-aside-03.svg" alt="회원관리">회원관리</a>
+                            <ul class="depth-02">
+                                <li>
+                                    <a href="#"><img src="/resources/image/ico/i-aside-03-01.svg" alt="회원정보">회원정보</a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="/resources/image/ico/i-aside-03-02.svg"
+                                            alt="메뉴권한관리">메뉴권한관리</a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="/resources/image/ico/i-aside-03-03.svg" alt="템플릿 관리">템플릿
+                                        관리</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><img src="/resources/image/ico/i-aside-04.svg" alt="블랙리스트 관리">블랙리스트 관리</a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="/resources/image/ico/i-aside-05.svg" alt="템플릿 관리">템플릿 관리</a>
+                        </li>
+                    </ul>
+                </aside>
+
                 <!-- #content -->
                 <article id="content">
 
+                    <!-- /.content-top 추가 -->
+                    <section class="content-top">
+                        <h1>블랙리스트</h1>
+                    </section>
+
                     <!-- .section -->
                     <section class="section">
-                        <!-- .title* -->
-                        <h2 class="title-main">
+                        <!-- /.title-main 사용안함 -->
+                        <!-- <h2 class="title-main">
                             <span class="txt">블랙리스트</span>
-                        </h2>
+                        </h2> -->
                         <!--// .title* -->
 
                         <!-- .group -->
                         <div class="group">
                             <div class="form-wrap">
                                 <!-- .form-list -->
-                                <ul class="form-list">
+                                <div class="form-list">
 
-                                    <li class="form-item item-half">
+                                    <div class="form-item item-half">
                                         <div class="unit">
                                             <div class="form-name">
                                                 <strong>
-                                                    <label for="textfield1-1">동물등록번호</label>
+                                                    <label for="animalNumber">동물등록번호</label>
                                                 </strong>
                                             </div>
                                             <div class="form-value item-half">
-                                                <div class="unit">
-                                                    <div class="input w-100">
-                                                        <input type="text" name="" id="animalNumber" class="input-data"
-                                                            value="" title="동물등록번호 입력">
-                                                    </div>
+                                                <div class="input w-100">
+                                                    <input type="text" name="" id="animalNumber" class="input-data"
+                                                        value="" title="동물등록번호 입력" placeholder="동물등록번호를 입력해주세요.">
                                                 </div>
                                             </div>
                                         </div>
@@ -115,47 +170,49 @@
                                         <div class="unit">
                                             <div class="form-name">
                                                 <strong>
-                                                    <label for="textfield1-1">등록자명</label>
+                                                    <label for="companyName">등록자명</label>
                                                 </strong>
                                             </div>
                                             <div class="form-value item-half">
-                                                <div class="unit">
-                                                    <div class="input w-100">
-                                                        <input type="text" name="" id="companyName" class="input-data"
-                                                            value="" title="등록자명 입력">
-                                                    </div>
+                                                <div class="input w-100">
+                                                    <input type="text" name="" id="companyName" class="input-data"
+                                                        value="" title="등록자명 입력" placeholder="등록자명을 입력해주세요.">
                                                 </div>
                                             </div>
                                         </div>
-                                    </li>
-                                </ul>
+
+                                        <!-- /.btn-group 위치변경(후) -->
+                                        <div class="btn-group">
+                                            <button type="button" class="btn primary" id="selBtn"><img
+                                                    src="/resources/image/ico/i-search-w.svg" alt="검색">검색</button>
+                                        </div>
+                                    </div>
+                                </div>
                                 <!--// .form-list -->
                             </div>
 
-                            <!-- .btn-group* -->
-                            <div class="btn-group">
+                            <!-- /.btn-group 위치변경(전) -->
+                            <!-- <div class="btn-group">
                                 <button type="button" class="btn primary" id="selBtn"><span>검색</span></button>
-                            </div>
+                            </div> -->
                             <!--// .btn-group* -->
                         </div>
                         <!--// .group -->
-                    </section>
-                    <!--// .section -->
 
-                    <section class="section">
                         <div class="group">
                             <!-- .data -->
                             <div class="data">
                                 <!-- .list-head -->
                                 <div class="list-head">
                                     <div class="list-info">
-                                        <button type="button" class="btn contained option-sm" id="#">
+                                        <p class="data-total">총 <b>3</b>건</p>
+                                        <button type="button" class="btn outline-primary option-md" id="#">
                                             <span>블랙리스트 등록</span>
                                         </button>
                                     </div>
                                 </div>
                                 <!--// .list-head -->
-                                <div class="data-body option-fixed-side" id="#" tabindex="0">
+                                <div class="data-body option-fixed-side" id="divData" tabindex="0">
                                     <table class="data-list">
                                         <caption class="sr-only">
                                             <!-- 표제목 -->
@@ -180,17 +237,25 @@
                                                 <th scope="col">등록자명</th>
                                                 <th scope="col">블랙리스트 등록일</th>
                                                 <th scope="col">등록사유</th>
+                                                <th scope="col">관리</th>
                                             </tr>
                                         </thead>
-                                        <tbody id="#">
+                                        <tbody id="dataList">
                                             <tr>
                                                 <td>1</td>
-                                                <td>410160012091333</td>
+                                                <td><a href="#">410160012091333</a></td>
                                                 <td>멍멍이1</td>
                                                 <td>남아</td>
                                                 <td>김우연</td>
                                                 <td>2024-10-25</td>
                                                 <td>마운팅 심함</td>
+                                                <td>
+                                                    <div class="btn-group center">
+                                                        <button type="button" class="btn outline-gray option-sm" id="#">
+                                                            <span>블랙리스트 해제</span>
+                                                        </button>
+                                                    </div>
+                                                </td>
                                             </tr>
 
 
@@ -224,6 +289,7 @@
                             <!--// .data -->
                         </div>
                     </section>
+                    <!--// .section -->
 
                     <!--// #content -->
                 </article>
@@ -234,6 +300,8 @@
     <script src="/resources/js/com/jquery-3.7.0.min.js"></script>
     <script src="/resources/js/com/common_pub.js"></script>
     <script src="/resources/js/cst/page_pub.js"></script>
+    <!-- 신규 js 추가 -->
+    <script src="/resources/js/custom/custom.js"></script>
 </body>
 
 </html>

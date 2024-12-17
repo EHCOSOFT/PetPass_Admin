@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,viewport-fit=cover,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>블랙리스트 관리</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/resources/image/com/favicon.ico">
+    <link rel="stylesheet" href="/resources/css/com/content.css">
+    <link rel="stylesheet" href="/resources/css/cnt/page.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="page">
+            <header id="header">
+                <!-- ./header-title 기존 html display:none; 처리 되어있음. -->
+                <h1 class="header-title">
+                    <span class="logo"><a href="javascript:;" title="메인 페이지"><span class="sr-only">Pet
+                                Pass</span></a></span>
+                    <span class="txt">블랙리스트</span>
+                </h1>
+
+                <!-- /.contianer 신규 추가-->
+                <div class="container">
+                    <button type="button" class="btn-menu-open">
+                        <img src="/resources/image/ico/i-list.svg" alt="메뉴 오픈">
+                    </button>
+                    <a href="javascript:;" class="header-logo">
+                        <img src="/resources/image/logo.svg" alt="DR CLOONEY LOGO">
+                    </a>
+                    <a href="javascript:;" class="header-logout" id="logOutBtn"><img
+                            src="/resources/image/ico/i-logout.svg" alt="로그아웃">로그아웃</a>
+                </div>
+
+                <!-- #nav -->
+                <!-- /#gnb 사용 안함 -->
+                <!-- <nav id="gnb">
+                    <div class="gnb-inner">
+                        <div class="gnb-wrap">
+                            <ul class="gnb-list">
+                                <li class="gnb-item fn-fold-wrap is-open" data-fold-slide="true" id="goPage01">
+                                    <a href="javascript:;" tabindex="0">
+                                        <span class="txt fn-fold-link">월별통계</span>
+                                    </a>
+                                    <button type="button" class="btn-fold fn-fold-btn" aria-expanded="true">
+                                        <span class="sr-only">닫기</span>
+                                    </button>
+                                </li>
+                                <li class="gnb-item fn-fold-wrap is-open" data-fold-slide="true">
+                                    <a href="javascript:;" tabindex="0">
+                                        <span class="txt fn-fold-link" id="goPage02">출입내역</span>
+                                    </a>
+                                    <button type="button" class="btn-fold fn-fold-btn" aria-expanded="true">
+                                        <span class="sr-only">닫기</span>
+                                    </button>
+                                </li>
+                                <li class="gnb-item fn-fold-wrap is-open" data-fold-slide="true" id="goPage04Li">
+                                    <a href="javascript:;" tabindex="0">
+                                        <span class="txt fn-fold-link" id="goPage04">회원관리</span>
+                                    </a>
+                                    <button type="button" class="btn-fold fn-fold-btn" aria-expanded="true">
+                                        <span class="sr-only">닫기</span>
+                                    </button>
+                                </li>
+                                <li class="gnb-item fn-fold-wrap is-open" data-fold-slide="true" id="">
+                                    <a href="javascript:;" tabindex="0">
+                                        <span class="txt fn-fold-link" id="">블랙리스트 관리</span>
+                                    </a>
+                                    <button type="button" class="btn-fold fn-fold-btn" aria-expanded="true">
+                                        <span class="sr-only">닫기</span>
+                                    </button>
+                                </li>
+                            </ul>
+                            <div class="gnb-btn-wrap">
+                                <button type="button" class="btn primary gnb-save"></button>
+                            </div>
+                        </div>
+
+                        <div class="util">
+                            <a href="javascript:;">
+                                <ul class="util-list" id="logOutBtn">로그아웃
+                                    <li class="util-item logout"><span class="sr-only">로그아웃</span></li>
+                                </ul>
+                            </a>
+                        </div>
+                    </div>
+                </nav> -->
+                <!--// #nav -->
+            </header>
+
+            <main id="main">
+
+                <!-- /.#asdie 신규 추가 -->
+                <aside class="aside" id="aside">
+                    <button type="button" class="btn-aside-close">
+                        <img src="/resources/image/ico/i-aside-close.svg" alt="메뉴 닫기">
+                    </button>
+                    <ul class="depth-01">
+                        <li>
+                            <a href="#"><img src="/resources/image/ico/i-aside-01.svg" alt="월별통계">월별통계</a>
+                        </li>
+                        <li class="active">
+                            <a href="#"><img src="/resources/image/ico/i-aside-02.svg" alt="출입내역">출입내역</a>
+                        </li>
+                        <li class="depth-child">
+                            <a href="#"><img src="/resources/image/ico/i-aside-03.svg" alt="회원관리">회원관리</a>
+                            <ul class="depth-02">
+                                <li>
+                                    <a href="#"><img src="/resources/image/ico/i-aside-03-01.svg" alt="회원정보">회원정보</a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="/resources/image/ico/i-aside-03-02.svg"
+                                            alt="메뉴권한관리">메뉴권한관리</a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="/resources/image/ico/i-aside-03-03.svg" alt="템플릿 관리">템플릿
+                                        관리</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><img src="/resources/image/ico/i-aside-04.svg" alt="블랙리스트 관리">블랙리스트 관리</a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="/resources/image/ico/i-aside-05.svg" alt="템플릿 관리">템플릿 관리</a>
+                        </li>
+                    </ul>
+                </aside>
+
+                <!-- #content -->
+                <article id="content">
+
+                    <!-- /.content-top 추가 -->
+                    <section class="content-top">
+                        <h1>출입내역</h1>
+                    </section>
+
+                    <!-- .section -->
+                    <section class="section">
+                        <!-- /.title-main 사용안함 -->
+                        <!-- <h2 class="title-main">
+                            <span class="txt">블랙리스트</span>
+                        </h2> -->
+                        <!--// .title* -->
+
+                        <!-- .group -->
+                        <div class="group">
+                            <div class="form-wrap">
+                                <!-- .form-list -->
+                                <div class="form-list">
+
+                                    <div class="form-item item-half">
+
+                                        <div class="unit">
+                                            <div class="form-name">
+                                                <strong>
+                                                    <label for="searchData">조회기간</label>
+                                                </strong>
+                                            </div>
+                                            <div class="form-value item-half">
+                                                <div class="input option-date w-100">
+                                                    <input type="text" name="searchStartDate" id="searchStartDate"
+                                                        class="input-data" placeholder="YYYY-MM-DD" title="조회 시작기간"
+                                                        value="2024-06-24">
+                                                    <button type="button" class="btn-calendar" aria-label="조회 시작기간"
+                                                        aria-expanded="false" aria-haspopup="dialog"><span
+                                                            class="sr-only">달력 선택</span></button>
+                                                </div>
+                                            </div>
+                                            <div class="form-value item-half">
+                                                <div class="input option-date w-100">
+                                                    <input type="text" name="searchEndDate" id="searchEndDate"
+                                                        class="input-data" placeholder="YYYY-MM-DD" title="조회 시작기간"
+                                                        value="2024-06-24">
+                                                    <button type="button" class="btn-calendar" aria-label="조회 시작기간"
+                                                        aria-expanded="false" aria-haspopup="dialog"><span
+                                                            class="sr-only">달력 선택</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="unit">
+                                            <div class="form-name">
+                                                <strong>
+                                                    <label for="animalNumber">제휴 업체명</label>
+                                                </strong>
+                                            </div>
+                                            <div class="form-value item-half">
+                                                <div class="input w-100">
+                                                    <input type="text" name="" id="animalNumber" class="input-data"
+                                                        value="" title="제휴업체명 입력" placeholder="제휴업체명을 입력해주세요.">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="form-item item-half">
+                                        <div class="unit">
+                                            <div class="form-name">
+                                                <strong>
+                                                    <label for="selectA">동물종류</label>
+                                                </strong>
+                                            </div>
+                                            <div class="form-value item-half">
+                                                <div class="input-wrap flex-column">
+                                                    <div class="select w-100">
+                                                        <select name="" id="selectA" class="select-data"
+                                                            aria-label="동물종류" aria-hidden="true" tabindex="-1">
+                                                            <option value="All">전체</option>
+                                                            <option value="D">강아지</option>
+                                                            <option value="C">고양이</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="unit">
+                                            <div class="form-name">
+                                                <strong>
+                                                    <label for="selectB">동반인원</label>
+                                                </strong>
+                                            </div>
+                                            <div class="form-value item-half">
+                                                <div class="input-wrap flex-column">
+                                                    <div class="select w-100">
+                                                        <select name="" id="selectB" class="select-data"
+                                                            aria-label="동반인원" aria-hidden="true" tabindex="-1">
+                                                            <option value="All">전체</option>
+                                                            <option value="1">1명</option>
+                                                            <option value="2">2명</option>
+                                                            <option value="3">3명</option>
+                                                            <option value="4">4명</option>
+                                                            <option value="5">5명</option>
+                                                            <option value="6">6명</option>
+                                                            <option value="7">7명</option>
+                                                            <option value="8">8명</option>
+                                                            <option value="9">9명</option>
+                                                            <option value="10">10명</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="unit">
+                                            <div class="form-name">
+                                                <strong>
+                                                    <label for="selectC">체고</label>
+                                                </strong>
+                                            </div>
+                                            <div class="form-value item-half">
+                                                <div class="input-wrap flex-column">
+                                                    <div class="select w-100">
+                                                        <select name="" id="selectC" class="select-data" aria-label="체고"
+                                                            aria-hidden="true" tabindex="-1">
+                                                            <option value="All">전체</option>
+                                                            <option value="S">소형</option>
+                                                            <option value="M">중형</option>
+                                                            <option value="L">대형</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-item item-half">
+
+                                        <div class="unit">
+                                            <div class="form-name">
+                                                <strong>
+                                                    <label for="selectD">상세조건</label>
+                                                </strong>
+                                            </div>
+                                            <div class="form-value item-half">
+                                                <div class="input-wrap flex-column">
+                                                    <div class="select w-100">
+                                                        <select name="" id="selectD" class="select-data"
+                                                            aria-label="상세조건" aria-hidden="true" tabindex="-1">
+                                                            <option value="All">전체</option>
+                                                            <option value="D1">품종</option>
+                                                            <option value="D2">성별</option>
+                                                            <option value="D3">몸무게</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="unit">
+                                            <div class="form-value item-half">
+                                                <div class="input-wrap flex-column">
+                                                    <div class="input w-100">
+                                                        <input type="text" id="selectE1" name="petBlackListEtcReason"
+                                                            class="input-data" value="" title="" placeholder="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="unit" style="display: none;">
+                                            <div class="form-value item-half">
+                                                <div class="input-wrap flex-column">
+                                                    <div class="select w-100">
+                                                        <select name="" id="selectE1" class="select-data"
+                                                            aria-label="몸무게" aria-hidden="true" tabindex="-1">
+                                                            <option value="All">몸무게전체</option>
+                                                            <option value="3">3kg이하</option>
+                                                            <option value="4">4~6kg</option>
+                                                            <option value="7">7~9kg</option>
+                                                            <option value="10">10~12kg</option>
+                                                            <option value="13">13~15kg</option>
+                                                            <option value="16">16~18kg</option>
+                                                            <option value="19">19~21kg</option>
+                                                            <option value="22">22kg이상</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="unit" style="display: none;">
+                                            <div class="form-value item-half">
+                                                <div class="input-wrap flex-column">
+                                                    <div class="select w-100">
+                                                        <select name="" id="selectE2" class="select-data"
+                                                            aria-label="성별" aria-hidden="true" tabindex="-1">
+                                                            <option value="All">성별전체</option>
+                                                            <option value="M">남아</option>
+                                                            <option value="F">여아</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /.btn-group 위치변경(후) -->
+                                        <div class="btn-group">
+                                            <button type="button" class="btn primary" id="selBtn"><img
+                                                    src="/resources/image/ico/i-search-w.svg" alt="검색">검색</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--// .form-list -->
+                            </div>
+
+                            <!-- /.btn-group 위치변경(전) -->
+                            <!-- <div class="btn-group">
+                                <button type="button" class="btn primary" id="selBtn"><span>검색</span></button>
+                            </div> -->
+                            <!--// .btn-group* -->
+                        </div>
+                        <!--// .group -->
+
+                        <div class="group">
+                            <!-- .data -->
+                            <div class="data">
+                                <!-- .list-head -->
+                                <div class="list-head">
+                                    <div class="list-info">
+                                        <p class="data-total">총 <b>3</b>건</p>
+                                        <button type="button" class="btn outline-primary option-md" id="#">
+                                            <span>엑셀다운로드</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!--// .list-head -->
+                                <div class="data-body option-fixed-side" id="divData" tabindex="0">
+                                    <table class="data-list">
+                                        <caption class="sr-only">
+                                            <!-- 표제목 -->
+                                            <strong>출입내역조회 표</strong>
+                                            <!-- 표내용순서 -->
+                                            <span>No, 출입일시, 제휴처, 동물구분, 체고, 등록자명, 보호자명, 연락처, 동반인원으로 구성됨</span>
+                                        </caption>
+                                        <colgroup>
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">No</th>
+                                                <th scope="col">출입일시</th>
+                                                <th scope="col">제휴처</th>
+                                                <th scope="col">동물구분</th>
+                                                <th scope="col">체고</th>
+                                                <th scope="col">등록자명</th>
+                                                <th scope="col">보호자명</th>
+                                                <th scope="col">연락처</th>
+                                                <th scope="col">동반인원</th>
+                                                <th scope="col">임시QR여부</th>
+                                                <th scope="col">출입QR</th>
+                                                <th scope="col">담당지역</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="dataList">
+                                            <tr>
+                                                <td>1</td>
+                                                <td><a href="#">2024-12-12 16:31</a></td>
+                                                <td>윤오에프앤비</td>
+                                                <td>강아지</td>
+                                                <td>M</td>
+                                                <td>성민창</td>
+                                                <td>성민창</td>
+                                                <td>010-9405-7299</td>
+                                                <td>2명</td>
+                                                <td>N</td>
+                                                <td>SKT Pass</td>
+                                                <td>서울특별시 영등포구</td>
+                                            </tr>
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="list-nodata" id="noData">
+                                    <p>검색결과가 없습니다.</p>
+                                </div>
+
+                                <!-- .list-foot -->
+                                <div class="list-foot" id="pagingDiv">
+                                    <div class="list-paging">
+                                        <a class="btn-list-prev" disabled="disabled">
+                                            <span class="sr-only">이전페이지</span>
+                                        </a>
+                                        <span class="page-current">
+                                            <strong>1</strong>
+                                            <a>2</a>
+                                            <a>3</a>
+                                            <a>4</a>
+                                        </span>
+                                        <a class="btn-list-next">
+                                            <span class="sr-only">다음페이지</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--// .list-foot -->
+                            </div>
+                            <!--// .data -->
+                        </div>
+                    </section>
+                    <!--// .section -->
+
+                    <!--// #content -->
+                </article>
+
+
+                <!-- #popup -->
+                <div id="popup">
+                    <!-- .calendar-popup -->
+                    <div class="calendar-popup" id="calendarPopup" role="dialog" aria-modal="true" aria-hidden="true"
+                        aria-labelledby="calendarTitle">
+                        <!-- .calendar-content -->
+                        <div class="calendar-content">
+                            <!-- .calendar-title -->
+                            <h2 class="calendar-title" id="calendarTitle"><span>달력</span></h2>
+                            <!--// .calendar-title -->
+                            <!-- .calendar -->
+                            <div class="calendar">
+                                <button class="btn-prev"><span class="sr-only">이전달</span></button>
+                                <button class="btn-next"><span class="sr-only">다음달</span></button>
+                                <div class="calendar-group">
+                                    <div class="calendar-head">
+                                        <div class="select in-calendar">
+                                            <select name="" id="calendar1" class="select-data fn-year" aria-label="년"
+                                                aria-hidden="true" tabindex="-1">
+                                                <option value="2023" selected>2023</option>
+                                                <option value="2024">2024</option>
+                                                <option value="2025">2025</option>
+                                            </select>
+                                        </div>
+                                        <div class="select in-calendar">
+                                            <select name="" id="calendar2" class="select-data fn-month" aria-label="월"
+                                                aria-hidden="true" tabindex="-1">
+                                                <option value="01">01</option>
+                                                <option value="02">02</option>
+                                                <option value="03">03</option>
+                                                <option value="04">04</option>
+                                                <option value="05">05</option>
+                                                <option value="06">06</option>
+                                                <option value="07">07</option>
+                                                <option value="08">08</option>
+                                                <option value="09">09</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="calendar-body">
+                                        <div class="week">
+                                            <span class="day">일</span>
+                                            <span class="day">월</span>
+                                            <span class="day">화</span>
+                                            <span class="day">수</span>
+                                            <span class="day">목</span>
+                                            <span class="day">금</span>
+                                            <span class="day">토</span>
+                                        </div>
+                                        <div class="day-group">
+                                            <button class="day prev">26</button>
+                                            <button class="day prev">27</button>
+                                            <button class="day prev">28</button>
+                                            <button class="day prev">29</button>
+                                            <button class="day prev">30</button>
+                                            <button class="day prev">31</button>
+                                            <button class="day">1</button>
+                                            <button class="day">2</button>
+                                            <button class="day">3</button>
+                                            <button class="day">4</button>
+                                            <button class="day today">5</button>
+                                            <button class="day">6</button>
+                                            <button class="day is-active">7</button>
+                                            <button class="day">8</button>
+                                            <button class="day">9</button>
+                                            <button class="day">10</button>
+                                            <button class="day holiday">11</button>
+                                            <button class="day">12</button>
+                                            <button class="day">13</button>
+                                            <button class="day">14</button>
+                                            <button class="day">15</button>
+                                            <button class="day">16</button>
+                                            <button class="day">17</button>
+                                            <button class="day is-start">18</button>
+                                            <button class="day ing">19</button>
+                                            <button class="day ing">20</button>
+                                            <button class="day ing">21</button>
+                                            <button class="day ing">22</button>
+                                            <button class="day is-end">23</button>
+                                            <button class="day">24</button>
+                                            <button class="day">25</button>
+                                            <button class="day">26</button>
+                                            <button class="day">27</button>
+                                            <button class="day">28</button>
+                                            <button class="day">29</button>
+                                            <button class="day">30</button>
+                                            <button class="day next">1</button>
+                                            <button class="day next">2</button>
+                                            <button class="day next">3</button>
+                                            <button class="day next">4</button>
+                                            <button class="day next">5</button>
+                                            <button class="day next">6</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// .calendar -->
+                            <!-- .btn-popup-close -->
+                            <button type="button" class="btn-popup-close">
+                                <span class="icon"></span>
+                                <span class="sr-only">팝업 닫기</span>
+                            </button>
+                            <!--// .btn-popup-close -->
+                        </div>
+                        <!--// .calendar-content -->
+                    </div>
+                    <!--// .calendar-popup -->
+                </div>
+                <!--// #popup -->
+            </main>
+        </div>
+    </div>
+
+    <script src="/resources/js/com/jquery-3.7.0.min.js"></script>
+    <script src="/resources/js/com/common_pub.js"></script>
+    <script src="/resources/js/cst/page_pub.js"></script>
+    <!-- 신규 js 추가 -->
+    <script src="/resources/js/custom/custom.js"></script>
+</body>
+
+</html>

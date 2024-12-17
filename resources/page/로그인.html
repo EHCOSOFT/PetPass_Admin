@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,viewport-fit=cover,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>블랙리스트 관리</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/resources/image/com/favicon.ico">
+    <link rel="stylesheet" href="/resources/css/com/content.css">
+    <link rel="stylesheet" href="/resources/css/cnt/page.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="page">
+            <main class="login-wrap">
+                <section class="login">
+                    <a href="javascript:;" class="login-logo">
+                        <img src="/resources/image/logo.svg" alt="DR CLOONEY LOGO">
+                    </a>
+                    <div class="login-input">
+                        <div class="input w-100">
+                            <input type="text" id="own_id" name="i" placeholder="아이디를 입력해주세요"
+                                onkeyup="checkLength(this, 20)" class="input-data" value="">
+                            <div class="form-name">
+                                <label for="textfield1-1"></label>
+                            </div>
+                        </div>
+                        <div class="input w-100">
+                            <input type="password" id="own_pw" name="p" placeholder="비밀번호를 입력해주세요"
+                                onkeyup="checkLength(this, 20)" class="input-data" value="">
+                        </div>
+                        <div class="check-group">
+                            <input type="checkbox" id="idChk">
+                            <label for="idChk">아이디 저장</label>
+                        </div>
+                    </div>
+                    <div class="btn-group w-100">
+                        <button type="button" class="btn primary" onclick="clickLoginBtn()">로그인</button>
+                    </div>
+                    <!-- <div class="group">
+                        <div class="form-wrap">
+                    <ul class="form-list">
+                        <li class="form-item item-half">
+                            <div class="unit">
+                                <div class="form-value item-half">
+                                    <div class="form-value item-half">
+
+                                        <div class="unit ">
+                                            <div class="input w-50">
+                                                <h1 class="login-title">
+                                                    <p>
+                                                        <img src="/resources/image/logo.png">
+                                                    </p>
+                                                    Pet Pass
+                                                </h1>
+                                            </div>
+
+                                            <div class="input w-50">
+                                                <input type="text" id="own_id" name="i" placeholder="아이디를 입력해주세요"
+                                                    onkeyup="checkLength(this, 20)" class="input-data" value="">
+                                            </div>
+
+                                            <div class="form-name"><strong><label for="textfield1-1"></label></strong>
+                                            </div>
+
+                                            <div class="input w-50">
+                                                <input type="password" id="own_pw" name="p" placeholder="비밀번호를 입력해주세요"
+                                                    onkeyup="checkLength(this, 20)" class="input-data" value="">
+                                            </div>
+
+                                            <div class="input w-50">
+                                                <input type="checkbox" id="idChk"> 입력하신 정보를 다음에도 사용
+                                            </div>
+
+                                            <div class="btn-group w-50">
+                                                <button type="button" class="btn primary"
+                                                    onclick="clickLoginBtn()">로그인</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+        </div>
+
+
+    </div> -->
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <script src="/resources/js/com/jquery-3.7.0.min.js"></script>
+    <script src="/resources/js/com/common_pub.js"></script>
+    <script src="/resources/js/cst/page_pub.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/resources/js/ppAdmin/ppAdmin00.js"></script>
+    <script src="/resources/js/ppAdmin/ppAdmin01.js"></script>
+    <!-- 신규 js 추가 -->
+    <script src="/resources/js/custom/custom.js"></script>
+</body>
+
+</html>

@@ -20,7 +20,6 @@
                 <h1 class="header-title">
                     <span class="logo"><a href="javascript:;" title="메인 페이지"><span class="sr-only">Pet
                                 Pass</span></a></span>
-                    <span class="txt">블랙리스트 등록</span>
                 </h1>
 
                 <!-- /.contianer 신규 추가-->
@@ -78,22 +77,21 @@
                             <div class="gnb-btn-wrap">
                                 <button type="button" class="btn primary gnb-save"></button>
                             </div>
-                        </div>
+                        </div> -->
 
-                        <div class="util">
+                <!-- <div class="util">
                             <a href="javascript:;">
                                 <ul class="util-list" id="logOutBtn">로그아웃
                                     <li class="util-item logout"><span class="sr-only">로그아웃</span></li>
                                 </ul>
                             </a>
-                        </div>
-                    </div>
+                        </div> -->
+                <!-- </div>
                 </nav> -->
                 <!--// #nav -->
             </header>
 
             <main id="main">
-
                 <!-- /.#asdie 신규 추가 -->
                 <aside class="aside" id="aside">
                     <button type="button" class="btn-aside-close">
@@ -135,22 +133,21 @@
 
                     <!-- /.content-top 추가 -->
                     <section class="content-top">
-                        <h1>블랙리스트</h1>
+                        <h1>메뉴관리</h1>
                     </section>
 
-                    <!-- .section 사용안함 -->
-                    <!-- <section class="section"> -->
-                    <!-- .title* -->
-                    <!-- <h2 class="title-main">
+                    <!-- /.section 사용안함 -->
+                    <!-- <section class="section">
+                        <h2 class="title-main">
                             <span class="txt">블랙리스트 등록</span>
-                        </h2> -->
-                    <!--// .title* -->
+                        </h2>
 
-                    <!-- </section> -->
+                    </section> -->
                     <!--// .section -->
 
                     <section class="section">
-                        <h2 class="section-title">블랙리스트 정보</h2>
+                        <!-- /.section-title 추가 -->
+                        <h2 class="section-title">메뉴권한</h2>
                         <div class="group">
                             <!-- .data -->
                             <div class="data">
@@ -162,10 +159,9 @@
                                     <table class="data-list">
                                         <caption class="sr-only">
                                             <!-- 표제목 -->
-                                            <strong>블랙리스트 정보 표</strong>
+                                            <strong>메뉴권한 정보 표</strong>
                                             <!-- 표내용순서 -->
-                                            <span>증권번호, 계약상태, 계약자, 피보험자, 상품구분, 플랜명, 보험료, 납입방법, 보기/납기/보험기간, 청약일자, 운행용도,
-                                                직업 정보</span>
+                                            <span>업체명, 아이디, 사업자번호, 구분, 주소, 전화번호, 탬플릿 관리, 블랙리스트 관리</span>
                                         </caption>
                                         <colgroup>
                                             <col>
@@ -175,148 +171,99 @@
                                         </colgroup>
                                         <tbody>
                                             <tr>
-                                                <th>동물등록번호<span>*</span></th>
+                                                <th>업체명</th>
                                                 <td>
                                                     <div class="input-wrap">
                                                         <div class="input w-100">
-                                                            <input type="text" id="petNumber" name="petNumber"
-                                                                class="input-data" value="410160012091333"
-                                                                title="동물등록번호" placeholder="동물등록번호 입력" disabled>
-                                                            <button type="button" class="btn-clear"
-                                                                aria-hidden="true"><span class="sr-only">입력 내용
-                                                                    삭제</span></button>
+                                                            <input type="text" id="companyName" name="companyName"
+                                                                class="input-data" value="구리시(장자호수공원)" title="업체명"
+                                                                placeholder="업체명 입력" disabled>
                                                         </div>
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <th>동물이름</th>
+                                                <th>아이디</th>
                                                 <td>
-                                                    <div class="input w-100">
-                                                        <input type="text" id="petName" name="petName"
-                                                            class="input-data" value="멍멍이1 " title="동물이름" disabled>
-                                                        <button type="button" class="btn-clear" aria-hidden="true"><span
-                                                                class="sr-only">입력 내용 삭제</span></button>
-                                                    </div>
-                                                </td>
-                                                <!-- 위치 이동 -->
-                                                <!-- <th>등록자명</th>
-                                                <td>
-                                                    <div class="input w-100">
-                                                        <input type="text" id="petGuardianName" name="petGuardianName"
-                                                            class="input-data" value="김우연" title="등록자명" disabled>
-                                                        <button type="button" class="btn-clear" aria-hidden="true"><span
-                                                                class="sr-only">입력 내용 삭제</span></button>
-                                                    </div>
-                                                </td> -->
-                                            </tr>
-                                            <tr>
-                                                <th>등록자명</th>
-                                                <td>
-                                                    <div class="input w-100">
-                                                        <input type="text" id="petGuardianName" name="petGuardianName"
-                                                            class="input-data" value="김우연" title="등록자명" disabled>
-                                                        <button type="button" class="btn-clear" aria-hidden="true"><span
-                                                                class="sr-only">입력 내용 삭제</span></button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th>성별</th>
-                                                <td>
-                                                    <div class="input w-100">
-                                                        <input type="text" id="petGender" name="petGender"
-                                                            class="input-data" value="남아" title="성별" disabled>
-                                                        <button type="button" class="btn-clear" aria-hidden="true"><span
-                                                                class="sr-only">입력 내용 삭제</span></button>
-                                                    </div>
-                                                </td>
-                                                <!-- 위치 이동 -->
-                                                <!-- <th>품종</th>
-                                                <td>
-                                                    <div class="input w-100">
-                                                        <input type="text" id="petBreedCodeOption"
-                                                            name="petBreedCodeOption" class="input-data" value="차와와"
-                                                            title="품종" disabled>
-                                                        <button type="button" class="btn-clear" aria-hidden="true"><span
-                                                                class="sr-only">입력 내용 삭제</span></button>
-                                                    </div>
-                                                </td> -->
-                                            </tr>
-                                            <tr>
-                                                <th>품종</th>
-                                                <td>
-                                                    <div class="input w-100">
-                                                        <input type="text" id="petBreedCodeOption"
-                                                            name="petBreedCodeOption" class="input-data" value="차와와"
-                                                            title="품종" disabled>
-                                                        <button type="button" class="btn-clear" aria-hidden="true"><span
-                                                                class="sr-only">입력 내용 삭제</span></button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th>사유<span>*</span></th>
-                                                <td>
-                                                    <div class="input-wrap flex-column">
-                                                        <div class="select w-100 disabled">
-                                                            <select name="petBlackListReason" id="petBlackListReason"
-                                                                class="select-data" aria-label="사유선택" aria-hidden="true"
-                                                                tabindex="-1">
-                                                                <option>사유선택</option>
-                                                                <option value="1">마운팅 심함</option>
-                                                                <option value="2">입질 심함</option>
-                                                                <option value="3">보호자 귀책</option>
-                                                                <option value="4">타인에게 피해입힘</option>
-                                                                <option value="0" selected>기타</option>
-                                                            </select>
-                                                        </div>
+                                                    <div class="input-wrap">
                                                         <div class="input w-100">
-                                                            <input type="text" id="petBlackListEtcReason"
-                                                                name="petBlackListEtcReason" class="input-data"
-                                                                value="그냥저냥 아무이유 없이 출입시키기 싫다" title="국가동물번호"
-                                                                placeholder="사유가 기타일시 내용입력" disabled>
-                                                            <button type="button" class="btn-clear"
-                                                                aria-hidden="true"><span class="sr-only">입력 내용
-                                                                    삭제</span></button>
+                                                            <input type="text" id="companyId" name="companyId" class="input-data"
+                                                                value="abcccd23" title="업체 아이디" disabled>
                                                         </div>
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <th>등록일</th>
+                                                <th>사업자번호</th>
                                                 <td>
-                                                    <div class="input option-date w-100">
-                                                        <input type="text" name="PetAccidentDate" id="PetAccidentDate"
-                                                            class="input-data" placeholder="YYYY-MM-DD" title="사고발생일"
-                                                            value="2024-06-24" disabled>
-                                                        <button type="button" class="btn-calendar" aria-label="사고발생일"
-                                                            aria-expanded="false" aria-haspopup="dialog"><span
-                                                                class="sr-only">달력 선택</span></button>
+                                                    <div class="input-wrap">
+                                                        <div class="input w-100">
+                                                            <input type="text" id="companyBusinessNumber" name="companyBusinessNumber" class="input-data"
+                                                                value="000-00-0000" title="업체 사업자번호" disabled>
+                                                        </div>
                                                     </div>
                                                 </td>
-                                                <!-- <th>사고발생일</th>
-                                                <td>
-                                                    <div class="input option-date w-100">
-                                                        <input type="text" name="PetAccidentDate" id="PetAccidentDate"
-                                                            class="input-data" placeholder="YYYY-MM-DD" title="사고발생일"
-                                                            value="2024-06-24" disabled>
-                                                        <button type="button" class="btn-calendar" aria-label="사고발생일"
-                                                            aria-expanded="false" aria-haspopup="dialog"><span
-                                                                class="sr-only">달력 선택</span></button>
-                                                    </div>
-                                                </td> -->
                                             </tr>
                                             <tr>
-                                                <th>사고발생일</th>
+                                                <th>구분</th>
                                                 <td>
-                                                    <div class="input option-date w-100">
-                                                        <input type="text" name="PetAccidentDate" id="PetAccidentDate"
-                                                            class="input-data" placeholder="YYYY-MM-DD" title="사고발생일"
-                                                            value="2024-06-24" disabled>
-                                                        <button type="button" class="btn-calendar" aria-label="사고발생일"
-                                                            aria-expanded="false" aria-haspopup="dialog"><span
-                                                                class="sr-only">달력 선택</span></button>
+                                                    <div class="input-wrap">
+                                                        <div class="input w-100">
+                                                            <input type="text" id="companyCategory" name="companyCategory" class="input-data"
+                                                                value="지자체" title="업체 구분" disabled>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>주소</th>
+                                                <td>
+                                                    <div class="input-wrap">
+                                                        <div class="input w-100">
+                                                            <input type="text" id="companyAddress" name="companyAddress" class="input-data"
+                                                                value="경기도 구리시 아차산로 439(교문동) 구리시청별관" title="업체 주소" disabled>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>전화번호</th>
+                                                <td>
+                                                    <div class="input-wrap">
+                                                        <div class="input w-100">
+                                                            <input type="text" id="companyPhoneNumber" name="companyPhoneNumber" class="input-data"
+                                                                value="010-0000-0000" title="업체 전화번호" disabled>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>탬플릿 관리</th>
+                                                <td>
+                                                    <div class="radio-wrap">
+                                                        <div class="radio-group">
+                                                            <input type="radio" id="radio01" name="tamplet">
+                                                            <label for="radio01">사용</label>
+                                                        </div>
+                                                        <div class="radio-group">
+                                                            <input type="radio" id="radio02" name="tamplet" checked>
+                                                            <label for="radio02">사용안함</label>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>블랙리스트 관리</th>
+                                                <td>
+                                                    <div class="radio-wrap">
+                                                        <div class="radio-group">
+                                                            <input type="radio" id="radio03" name="blacklist" checked>
+                                                            <label for="radio03">사용</label>
+                                                        </div>
+                                                        <div class="radio-group">
+                                                            <input type="radio" id="radio04" name="blacklist">
+                                                            <label for="radio04">사용안함</label>
+                                                        </div>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -331,18 +278,14 @@
                         <div class="btn-group flex-end">
                             <button type="button" class="btn filled fixed" id=""><span>취소</span></button>
                             <button type="button" class="btn primary" id=""><span>등록</span></button>
-                            <!-- /. 블랙리스트 해제 위치 이동 -->
-                            <!-- <button type="button" class="btn black" id=""><span>블랙리스트 해제</span></button> -->
                         </div>
                     </section>
 
                     <!-- /.btn-group 위치 이동(전) -->
-                    <!-- <div class="btn-group between">
+                    <!-- <div class="btn-group">
                         <button type="button" class="btn filled fixed" id=""><span>취소</span></button>
-                        <button type="button" class="btn primary" id=""><span>등록</span></button> -->
-                    <!-- /. 블랙리스트 해제 위치 이동 -->
-                    <!-- <button type="button" class="btn black" id=""><span>블랙리스트 해제</span></button> -->
-                    <!-- </div> -->
+                        <button type="button" class="btn primary" id=""><span>등록</span></button>
+                    </div> -->
                     <!--// .btn-group* -->
 
                     <!--// #content -->
@@ -469,6 +412,7 @@
     <script src="/resources/js/cst/page_pub.js"></script>
     <!-- 신규 js 추가 -->
     <script src="/resources/js/custom/custom.js"></script>
+
     <script>
         // 기존 소스 custom.js로 이동
         // $(document).ready(function () {

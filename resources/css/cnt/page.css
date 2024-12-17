@@ -13,7 +13,7 @@
 .product-detail ul > li {font-size: var(--font-14-xs); color: var(--color-7E869A-base);}
 .product-detail ul > li + li {padding-top: var(--space-4-min);}
 .product-detail ul + ul {padding-top: var(--space-16-sm);}
-.unit.is-open .product-detail {max-height: inherit; padding-top: 2.0rem; padding-bottom: 2.0rem; border-bottom: var(--line-1-sm) solid var(--color-F6F7F8-bg-light);}
+.unit.is-open .product-detail {max-height: inherit; padding-top: 2.0rem; padding-bottom: 2.0rem; border-bottom: var(--line-1-sm) solid var(--color-bg-light);}
 .unit.is-open .btn-card-more::after {transform: rotate3d(0, 0, 1, 0deg);}
 .unit.is-open .btn-card-more > .txt::before {content: '닫기';}
 
@@ -33,19 +33,19 @@
 .card-radio.card-list .card-item+.card-item{margin-top:0}  
 .card-radio.card-list .card-item .label{text-align: center; font-size:var(--font-14-xs); color:var(--color-313749-txt-body)}
 .card-radio.card-list .card-item .label .txt{display:block;}
-.card-radio.card-list .card-item .label .txt:before{display:flex; justify-content: center; content:""; width:var(--icon-36-lg); height:var(--icon-36-lg); margin:0 auto var(--space-4-min); background:var(--bg-url-36-lg) no-repeat calc(var(--icon-36-lg) * -1)  calc(var(--icon-36-lg) * -5); background-size: var(--bg-size-36-lg);}
+.card-radio.card-list .card-item .label .txt:before{display:flex; justify-content: center; content:""; width:var(--icon-lg); height:var(--icon-lg); margin:0 auto var(--space-4-min); background:var(--bg-url-36-lg) no-repeat calc(var(--icon-lg) * -1)  calc(var(--icon-lg) * -5); background-size: var(--bg-size-36-lg);}
 .card-radio.card-list .card-select .control[type='radio']:focus ~ .label::before,
 .card-radio.card-list .card-select .control[type='radio']:checked ~ .label::before {box-shadow: none;}
 .card-radio.card-list .card-select .control[type='radio']:focus ~ .label .txt,
 .card-radio.card-list .card-select .control[type='radio']:checked ~ .label .txt {color:var(--color-primary); font-weight:var(--font-medium);}
-.card-radio.card-list .card-item .ico2 .label .txt:before {background-position-x: calc(var(--icon-36-lg) * -3);}
-.card-radio.card-list .card-item .ico3 .label .txt:before {background-position-x: calc(var(--icon-36-lg) * -5);}
+.card-radio.card-list .card-item .ico2 .label .txt:before {background-position-x: calc(var(--icon-lg) * -3);}
+.card-radio.card-list .card-item .ico3 .label .txt:before {background-position-x: calc(var(--icon-lg) * -5);}
 .card-radio.card-list .card-item .ico1 .control[type='radio']:focus ~ .label .txt:before,
-.card-radio.card-list .card-item .ico1 .control[type='radio']:checked ~ .label .txt:before {background-position-x:calc(var(--icon-36-lg) * 0);}
+.card-radio.card-list .card-item .ico1 .control[type='radio']:checked ~ .label .txt:before {background-position-x:calc(var(--icon-lg) * 0);}
 .card-radio.card-list .card-item .ico2 .control[type='radio']:focus ~ .label .txt:before,
-.card-radio.card-list .card-item .ico2 .control[type='radio']:checked ~ .label .txt:before {background-position-x: calc(var(--icon-36-lg) * -2);}
+.card-radio.card-list .card-item .ico2 .control[type='radio']:checked ~ .label .txt:before {background-position-x: calc(var(--icon-lg) * -2);}
 .card-radio.card-list .card-item .ico3 .control[type='radio']:focus ~ .label .txt:before,
-.card-radio.card-list .card-item .ico3 .control[type='radio']:checked ~ .label .txt:before {background-position-x: calc(var(--icon-36-lg) * -4);}
+.card-radio.card-list .card-item .ico3 .control[type='radio']:checked ~ .label .txt:before {background-position-x: calc(var(--icon-lg) * -4);}
 
 @media screen and (min-width: 768px) {
 	.product-select .item-half {align-items: flex-start;}
@@ -101,7 +101,7 @@
 .section.contract .electronic .electronic-list > ul > li {margin-top: var(--space-8-xxs);}
 .section.contract .electronic .electronic-list li.is-active {border-right: .2rem solid var(--color-primary);}
 .section.contract .electronic .electronic-list li.is-active > button {color: var(--color-primary);}
-.section.contract .electronic .unit + .unit {height: 100%; margin: 0; background-color: var(--color-F6F7F8-bg-light); border-left: var(--line-1-sm) solid var(--color-E2E4E9-bg-dark);}
+.section.contract .electronic .unit + .unit {height: 100%; margin: 0; background-color: var(--color-bg-light); border-left: var(--line-1-sm) solid var(--color-E2E4E9-bg-dark);}
 
 .sick-wrap {height: 100%;}
 .sick-wrap .group {display: flex; flex-direction: column; height: 100%;}
@@ -113,7 +113,7 @@
 .search-word .segment-item .label .txt {color: var(--color-12192B-dark);}
 .search-word .segment-item .label strong {color: var(--color-primary); font-weight: var(--font-regular);}
 .search-word .segment-item .control {top: 0; bottom: 0; left: 0; right: 0; width: 100%; height: 100%; border-radius: 0;}
-.search-word .segment-item .control:checked {background-color: var(--color-F6F7F8-bg-light); border-color: transparent; box-shadow: none;}
+.search-word .segment-item .control:checked {background-color: var(--color-bg-light); border-color: transparent; box-shadow: none;}
 .search-word .segment-item .control:checked ~ .label {color:var(--color-12192B-dark); font-weight: var(--font-regular);}
 .search-word .segment-item + .segment-item::before {display: none;}
 
@@ -126,9 +126,9 @@
 .section.contract .unit .box.option-bg > ol > li {font-size: var(--font-15-sm); color: var(--color-12192B-dark);}
 .section.contract .unit .box.option-bg > ol > li + li {margin-top: var(--space-8-xxs);}
 
-.section.contract .option-step2 .card-item .type1::before {background-position:calc(var(--icon-48-xl) * 0) calc(var(--icon-48-xl) * -8);}
-.section.contract .option-step2 .card-item .type2::before {background-position:calc(var(--icon-48-xl) * -1) calc(var(--icon-48-xl) * -8);}
-.section.contract .option-step2 .card-item .type3::before {background-position:calc(var(--icon-48-xl) * -2) calc(var(--icon-48-xl) * -8);}
+.section.contract .option-step2 .card-item .type1::before {background-position:calc(var(--icon-xl) * 0) calc(var(--icon-xl) * -8);}
+.section.contract .option-step2 .card-item .type2::before {background-position:calc(var(--icon-xl) * -1) calc(var(--icon-xl) * -8);}
+.section.contract .option-step2 .card-item .type3::before {background-position:calc(var(--icon-xl) * -2) calc(var(--icon-xl) * -8);}
 
 .popup-content .section.contract .group.option-line {margin-top:var(--space-48-max); padding-top:var(--space-48-max); border-top: var(--line-1-sm) solid var(--color-EDEFF2-bg-base);}
 

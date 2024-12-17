@@ -24,7 +24,7 @@
 [data-main-copy="true"].popup-wrap .popup-title > span {opacity: 0;}
 [data-main-copy="true"].popup-wrap .popup-title.is-active > span {opacity: 1; transition: opacity var(--animation-speed) var(--animation-timing-ease);}
 
-.btn-popup-close {position: absolute; overflow: hidden; z-index: 1; top: var(--space-20-md); right: var(--space-20-md); width: var(--icon-24-md); height: var(--icon-24-md); background: var(--bg-url-24-md) no-repeat calc(var(--icon-24-md) * -3) 0; background-size: var(--bg-size-24-md);}
+.btn-popup-close {position: absolute; overflow: hidden; z-index: 1; top: var(--space-20-md); right: var(--space-20-md); width: var(--icon-md); height: var(--icon-md); background: var(--bg-url-24-md) no-repeat calc(var(--icon-md) * -3) 0; background-size: var(--bg-size-24-md);}
 
 .popup-head.is-hide ~ .popup-content > .section:first-child {padding-top: 0;}
 .popup-head.is-hide .popup-title > span {overflow: hidden; position: absolute; clip: rect(0, 0, 0, 0); clip-path: polygon(0 0, 0 0, 0 0); width: 1px; height: 1px; margin: -1px;}
@@ -48,8 +48,8 @@
 
 /* 풀 - (태블릿+PC) */
 @media screen and (min-width: 768px) {
-	.popup-wrap.option-full .popup-inner {max-width: 360px; height: auto; max-height: calc(var(--vh, 1vh) * 90); border-radius: var(--radius-24-xl);}
-	.popup-wrap.option-full.expended .popup-inner {max-width: 90%; height: calc(var(--vh, 1vh) * 90); border-radius: var(--radius-24-xl);}
+	.popup-wrap.option-full .popup-inner {max-width: 360px; height: auto; max-height: calc(var(--vh, 1vh) * 90); border-radius: var(--radius-24-xxl);}
+	.popup-wrap.option-full.expended .popup-inner {max-width: 90%; height: calc(var(--vh, 1vh) * 90); border-radius: var(--radius-24-xxl);}
 	.popup-wrap.option-full .popup-foot {padding-bottom: var(--space-20-md);}
 }
 
@@ -179,11 +179,11 @@
 .popup-wrap.option-guide.is-open .popup-head {padding-bottom: 1.971rem;}
 .popup-wrap.option-guide .popup-content .section:last-child {padding-bottom: calc(2.4rem + constant(safe-area-inset-bottom)); padding-bottom: calc(2.4rem + env(safe-area-inset-bottom));}
 
-.popup-wrap.option-guide .popup-inner {opacity: 1; border-top-left-radius: var(--radius-24-xl); border-top-right-radius: var(--radius-24-xl); box-shadow: 0 -.4rem 1.6rem 0 rgba(18, 25, 43, 0.08);}
+.popup-wrap.option-guide .popup-inner {opacity: 1; border-top-left-radius: var(--radius-24-xxl); border-top-right-radius: var(--radius-24-xxl); box-shadow: 0 -.4rem 1.6rem 0 rgba(18, 25, 43, 0.08);}
 .popup-wrap.option-guide .popup-content {overflow-y: hidden; max-height: 0; transition: max-height var(--animation-speed) var(--animation-timing-ease);}
 .popup-wrap.option-guide.is-open .popup-content {max-height: calc(var(--vh, 1vh) * 80);}
 
-.btn-popup-fold {position: absolute; overflow: hidden; z-index: 1; top: var(--space-20-md); right: var(--space-20-md); width: var(--icon-24-md); height: var(--icon-24-md); background: var(--bg-url-24-md) no-repeat calc(var(--icon-24-md) * -3) calc(var(--icon-24-md) * -1); background-size: var(--bg-size-24-md); transform: rotate(-180deg); transition: transform var(--animation-speed) var(--animation-timing-base);}
+.btn-popup-fold {position: absolute; overflow: hidden; z-index: 1; top: var(--space-20-md); right: var(--space-20-md); width: var(--icon-md); height: var(--icon-md); background: var(--bg-url-24-md) no-repeat calc(var(--icon-md) * -3) calc(var(--icon-md) * -1); background-size: var(--bg-size-24-md); transform: rotate(-180deg); transition: transform var(--animation-speed) var(--animation-timing-base);}
 .popup-wrap.option-guide.is-open .btn-popup-fold {transform: rotate(0deg);}
 
 /* 팝업레이아웃 - 오픈시 */
@@ -199,8 +199,8 @@
 /* .popup-wrap.is-open .popup-inner {opacity: 1;} */
 
 /* 팝오버 */
-.helper {display: inline-flex; width: var(--icon-16-sm); height: var(--icon-16-sm); margin-top: -.2rem; vertical-align: middle;}
-.helper-btn {display: block; width: 100%; height: 100%; background: var(--bg-url-16-sm) no-repeat calc(var(--icon-16-sm) * -4) 0; background-size: var(--bg-size-16-sm);}
+.helper {display: inline-flex; width: var(--icon-sm); height: var(--icon-sm); margin-top: -.2rem; vertical-align: middle;}
+.helper-btn {display: block; width: 100%; height: 100%; background: var(--bg-url-16-sm) no-repeat calc(var(--icon-sm) * -4) 0; background-size: var(--bg-size-16-sm);}
 
 .popover {position: absolute; display: none; z-index: 10; left: var(--space-20-md); width: calc(100% - var(--space-40-xxl)); padding: var(--space-40-xxl) var(--space-40-xxl) var(--space-20-md) var(--space-20-md); text-align: left; transform: translate3d(0, -12%, 0); opacity: 0; transition-duration: 0s; transition-delay: 0s;}
 .popover.is-open {display: block; animation: animation-popover var(--animation-speed) var(--animation-timing-outback) forwards;}
@@ -210,7 +210,7 @@
 .popover-content {line-height: 1.5; font-size: var(--font-14-xs); color: var(--color-313749-txt-body);}
 .popover-content .text {font-weight: var(--font-regular); font-size: var(--font-14-xs);}
 .popover-title ~ .popover-content {padding-top: var(--space-8-xxs);}
-.btn-popover-close {position: absolute; z-index: 1; top: var(--space-40-xxl); right: var(--space-20-md); width: var(--icon-16-sm); height: var(--icon-16-sm); background: var(--bg-url-16-sm) no-repeat calc(var(--icon-16-sm) * -5) calc(var(--icon-16-sm) * -3); background-size: var(--bg-size-16-sm);}
+.btn-popover-close {position: absolute; z-index: 1; top: var(--space-40-xxl); right: var(--space-20-md); width: var(--icon-sm); height: var(--icon-sm); background: var(--bg-url-16-sm) no-repeat calc(var(--icon-sm) * -5) calc(var(--icon-sm) * -3); background-size: var(--bg-size-16-sm);}
 
 .card-item .popover {left: 0; width: 100%;}
 .card-title .popover {left: -2.4rem; width: calc(100% + 4.8rem);}
@@ -231,8 +231,8 @@
 }
 
 /* 툴팁 */
-.tooltip {display: inline-flex; width: var(--icon-16-sm); height: var(--icon-16-sm); margin-top: -.2rem; vertical-align: middle;}
-.tooltip-btn {display: block; width: 100%; height: 100%; background: var(--bg-url-16-sm) no-repeat calc(var(--icon-16-sm) * -3) 0; background-size: var(--bg-size-16-sm);}
+.tooltip {display: inline-flex; width: var(--icon-sm); height: var(--icon-sm); margin-top: -.2rem; vertical-align: middle;}
+.tooltip-btn {display: block; width: 100%; height: 100%; background: var(--bg-url-16-sm) no-repeat calc(var(--icon-sm) * -3) 0; background-size: var(--bg-size-16-sm);}
 .tooltip-btn > span {font-size: 0;}
 .tooltip-body {position: absolute; display: none; z-index: 10; padding: var(--space-8-xxs) var(--space-12-xs); background-color: var(--color-656B7B-txt-sub); border-radius: var(--radius-8-md); box-shadow: var(--shadow-sm); line-height: 1.35; font-weight: var(--font-regular); font-size: var(--font-12-min); color: var(--color-light); transform: translate3d(0, -12%, 0); opacity: 0; transition-duration: 0s; transition-delay: 0s;}
 .tooltip-body::before {content: ''; position: absolute; width: .5rem; height: .8rem; background: var(--bg-url-etc) no-repeat 0 0; background-size: var(--bg-size-etc);}
@@ -266,7 +266,7 @@
 .toast {position: fixed; display: none; z-index: 11; bottom: 0; left: 0; width: calc(100% - (var(--space-body) * 2)); margin: 0 var(--space-body) var(--space-24-lg); margin-bottom: calc(var(--space-24-lg) + constant(safe-area-inset-bottom)); margin-bottom: calc(var(--space-24-lg) + env(safe-area-inset-bottom)); padding: var(--space-12-xs) var(--space-32-xl) var(--space-12-xs) var(--space-16-sm); background-color: var(--color-313749-txt-body); border-radius: var(--radius-8-md); transform: translate3d(0, 100%, 0); opacity: 0;}
 .toast.is-open {display: block; animation: animation-toast var(--animation-speed) var(--animation-timing-outback) forwards;}
 .toast-content {line-height: 1.5; font-size: var(--font-14-xs); color: var(--color-light);}
-.btn-toast-close {position: absolute; z-index: 1; top: 1.45rem; right: var(--space-12-xs); width: var(--icon-16-sm); height: var(--icon-16-sm); background: var(--bg-url-16-sm) no-repeat calc(var(--icon-16-sm) * -5) calc(var(--icon-16-sm) * -3); background-size: var(--bg-size-16-sm);}
+.btn-toast-close {position: absolute; z-index: 1; top: 1.45rem; right: var(--space-12-xs); width: var(--icon-sm); height: var(--icon-sm); background: var(--bg-url-16-sm) no-repeat calc(var(--icon-sm) * -5) calc(var(--icon-sm) * -3); background-size: var(--bg-size-16-sm);}
 
 .section.has-space .toast {margin-bottom: calc(8.8rem + 1.2rem); margin-bottom: calc(8.8rem + 1.2rem + constant(safe-area-inset-bottom)); margin-bottom: calc(8.8rem + 1.2rem + env(safe-area-inset-bottom));}
 

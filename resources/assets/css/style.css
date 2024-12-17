@@ -777,7 +777,7 @@ progress {
 }
 
 .exam-txt {
-  font-size: 14px;
+  font-size: var(--font-14-xs);
   font-weight: 700;
   line-height: 22px;
   margin-top: 30px;
@@ -878,13 +878,13 @@ footer .service-txt {
   font-weight: 700;
 }
 footer .inquiry {
-  font-size: 14px;
+  font-size: var(--font-14-xs);
   color: #47432e;
   margin-top: 10px;
   font-weight: 300;
 }
 footer .copyright {
-  font-size: 14px;
+  font-size: var(--font-14-xs);
   color: #47432e;
   margin-top: 6px;
   font-weight: 300;
