@@ -243,30 +243,30 @@ $(document).ready(function () {
         const newTemplate = `
             <li class="form-move-item">
                 <button type="button" class="btn-move">
-                    <img src="/resources/image/ico/i-move.svg" alt="이동">
+                    <img src="../image/ico/i-move.svg" alt="이동">
                 </button>
                 <div class="form-move-box">
                     <div class="form-move-option">
                         <div class="form-option-group">
                             <div class="dropdown">
                                 <button class="dropdown-button">
-                                    <img src="/resources/image/ico/i-template-01.svg" alt="단답형">단답형
+                                    <img src="../image/ico/i-template-01.svg" alt="단답형">단답형
                                 </button>
                                 <div class="dropdown-content">
                                     <a href="#" class="selected" value="templateText">
-                                        <img src="/resources/image/ico/i-template-01.svg" alt="단답형">단답형
+                                        <img src="../image/ico/i-template-01.svg" alt="단답형">단답형
                                     </a>
                                     <a href="#" value="templateCheckbox">
-                                        <img src="/resources/image/ico/i-template-02.svg" alt="체크박스">체크박스
+                                        <img src="../image/ico/i-template-02.svg" alt="체크박스">체크박스
                                     </a>
                                     <a href="#" value="templateRadio">
-                                        <img src="/resources/image/ico/i-template-03.svg" alt="단일선택">단일선택
+                                        <img src="../image/ico/i-template-03.svg" alt="단일선택">단일선택
                                     </a>
                                     <a href="#" value="templateSelect">
-                                        <img src="/resources/image/ico/i-template-04.svg" alt="목록선택형">목록선택형
+                                        <img src="../image/ico/i-template-04.svg" alt="목록선택형">목록선택형
                                     </a>
                                     <a href="#" value="templateRadioText">
-                                        <img src="/resources/image/ico/i-template-03.svg" alt="단일선택+단답형">단일선택+단답형
+                                        <img src="../image/ico/i-template-03.svg" alt="단일선택+단답형">단일선택+단답형
                                     </a>
                                 </div>
                             </div>
@@ -280,7 +280,7 @@ $(document).ready(function () {
                             </div>
                         </div>
                         <button type="button" class="btn-move-close open-modal" data-modal-id="alertModal">
-                            <img src="/resources/image/ico/i-move-close.svg" alt="템플릿 삭제">
+                            <img src="../image/ico/i-move-close.svg" alt="템플릿 삭제">
                         </button>
                     </div>
                     <div class="template-change">
@@ -394,7 +394,7 @@ $(document).ready(function () {
                             <input type="text" id="templateText${counter}" name="templateText${counter}"
                                 class="input-data" value="" placeholder="항목 입력(8byte)">
                             <button type="button" class="btn-input-close">
-                                <img src="/resources/image/ico/i-move-close.svg" alt="항목 삭제">
+                                <img src="../image/ico/i-move-close.svg" alt="항목 삭제">
                             </button>
                         </div>
                         <div class="check-group">
@@ -435,7 +435,7 @@ $(document).ready(function () {
                 <input type="text" id="templateText${counter}" name="templateText${counter}"
                     class="input-data" value="" placeholder="항목 입력(8byte)">
                     <button type="button" class="btn-input-close">
-                        <img src="/resources/image/ico/i-move-close.svg"
+                        <img src="../image/ico/i-move-close.svg"
                             alt="항목 삭제">
                     </button>
                 </div>
@@ -454,7 +454,7 @@ $(document).ready(function () {
                 <input type="text" id="templateText${counter}" name="templateText${counter}"
                     class="input-data" value="" placeholder="항목 입력(8byte)">
                 <button type="button" class="btn-input-close">
-                    <img src="/resources/image/ico/i-move-close.svg"
+                    <img src="../image/ico/i-move-close.svg"
                         alt="항목 삭제">
                 </button>
             </div>
@@ -473,7 +473,7 @@ $(document).ready(function () {
                 <input type="text" id="templateText${counter}" name="templateText${counter}"
                     class="input-data" value="" placeholder="항목 입력(8byte)">
                 <button type="button" class="btn-input-close">
-                    <img src="/resources/image/ico/i-move-close.svg"
+                    <img src="../image/ico/i-move-close.svg"
                         alt="항목 삭제">
                 </button>
             </div>`;
@@ -497,7 +497,7 @@ $(document).ready(function () {
                     <input type="text" id="template${counter}" name="template${counter}"
                         class="input-data" value="" placeholder="항목 입력(8byte)">
                     <button type="button" class="btn-radio-item-close">
-                        <img src="/resources/image/ico/i-move-close.svg" alt="항목 삭제">
+                        <img src="../image/ico/i-move-close.svg" alt="항목 삭제">
                     </button>
                 </div>
                 <div class="check-group">

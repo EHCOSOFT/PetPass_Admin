@@ -128,7 +128,7 @@ button {
 }
 
 #aside .depth-child>a::after {
-    background: url(/resources/image/ico/i-chevron-down-w.svg);
+    background: url(../../image/ico/i-chevron-down-w.svg);
     content: '';
     display: inline-block;
     height: 20px;
@@ -680,7 +680,7 @@ button {
 }
 
 .dropdown-button::after {
-    background: url(/resources/image/ico/i-chevron-down.svg);
+    background: url(../../image/ico/i-chevron-down.svg);
     content: '';
     display: inline-block;
     height: 20px;
@@ -770,7 +770,7 @@ button {
 }
 
 .check-group input+label::before {
-    background: url(/resources/image/ico/i-checkbox.svg);
+    background: url(../../image/ico/i-checkbox.svg);
     background-size: cover;
     content: '';
     display: inline-block;
@@ -779,17 +779,17 @@ button {
 }
 
 .check-group input:checked+label::before {
-    background: url(/resources/image/ico/i-checkbox-checked.svg);
+    background: url(../../image/ico/i-checkbox-checked.svg);
     background-size: cover;
 }
 
 .check-group input:disabled+label::before {
-    background: url(/resources/image/ico/i-checkbox-disabled.svg);
+    background: url(../../image/ico/i-checkbox-disabled.svg);
     background-size: cover;
 }
 
 .check-group input:checked:disabled+label::before {
-    background: url(/resources/image/ico/i-checkbox-checked-disabled.svg);
+    background: url(../../image/ico/i-checkbox-checked-disabled.svg);
     background-size: cover;
 }
 
@@ -827,7 +827,7 @@ button {
 }
 
 .radio-group input+label::before {
-    background: url(/resources/image/ico/i-radio.svg);
+    background: url(../../image/ico/i-radio.svg);
     background-size: cover;
     content: '';
     display: inline-block;
@@ -836,7 +836,7 @@ button {
 }
 
 .radio-group input:checked+label::before {
-    background: url(/resources/image/ico/i-radio-checked.svg);
+    background: url(../../image/ico/i-radio-checked.svg);
     background-size: cover;
 }
 
